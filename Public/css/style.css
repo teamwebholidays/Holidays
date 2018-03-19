@@ -1,0 +1,67 @@
+
+.nav-margin{
+	margin-right:20px;
+}
+.border{
+	width:600px;
+	display: inline-block;
+	border-bottom: 1px solid white;
+}
+
+@keyframes example {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: green;}
+}
+
+h1 {
+	animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@media (max-width: @screen-md) {
+    h1{
+    	font-size: 200%;
+    }
+}
+
+a:hover{
+	color:yellow;
+}
+
+
+.outer {
+  margin: 50px;
+}
+
+.button {
+  border: 1px solid white;
+  border-radius: 50px;
+  width: 200px;
+  height: 30px;
+  display: block;
+
+  background: linear-gradient(to right, yellow 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+}
+
+.button:hover {
+  background-position: left bottom;
+}
+
+.text {
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px; 
+  color: green;
+  transition: all .2s ease-out;
+  display: block;
+}
+
+.text:hover {
+  font-weight: bolder;  
+}
