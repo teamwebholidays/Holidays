@@ -35,8 +35,8 @@
                    <a class="nav-hover" href="#" >LIÊN HỆ</a>
                 </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                  <div class="dropdown">
+                <form class="form-inline my-2 my-lg-0" >
+                  <div class="dropdown" align="center">
                       <button class="btn dropdown-toggle btn-link" type="button" data-toggle="dropdown">
                           <img src="Public/images/icon-search.png" width="20px"></button>
                       <ul class="dropdown-menu">
@@ -65,8 +65,8 @@
       <div class="col-md-2">
       </div>
       <div class="col-md-10">
-        <h1 style="color:white; font-size: 700%">HLTP HOLIDAYS</h1>
-         <p style="color:white;float:left">CHUYÊN TRANG THÔNG TIN MAI MỐI</p>
+        <h1 style="color:white; font-size: 8vw" align="center">HLTP HOLIDAYS</h1>
+         <p style="color:white;float:left; font-size: 1em">CHUYÊN TRANG THÔNG TIN MAI MỐI</p>
          <span class="border"> </span>
       </div>
     </div>

@@ -3,7 +3,7 @@
 	margin-right:20px;
 }
 .border{
-	width:600px;
+	width:40vw;
 	display: inline-block;
 	border-bottom: 1px solid white;
 }
@@ -16,15 +16,9 @@
 }
 
 header h1 {
-	   animation-name: example;
-    animation-duration: 4s;
+	  animation-name: example;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
-}
-
-@media (max-width: @screen-md) {
-    h1{
-    	font-size: 200%;
-    }
 }
 
 .nav-hover{
