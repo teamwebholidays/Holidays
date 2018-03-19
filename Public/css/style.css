@@ -15,8 +15,8 @@
     100% {color: green;}
 }
 
-h1 {
-	animation-name: example;
+header h1 {
+	   animation-name: example;
     animation-duration: 4s;
     animation-iteration-count: infinite;
 }
@@ -27,8 +27,14 @@ h1 {
     }
 }
 
-a:hover{
-	color:yellow;
+.nav-hover{
+  text-decoration: none;
+  color:white;
+  
+}
+
+.nav-hover:hover{
+  color:yellow;
 }
 
 

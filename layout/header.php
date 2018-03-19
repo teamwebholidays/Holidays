@@ -13,30 +13,38 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active nav-margin">
-                  <a class="nav-link nav-hover" href="#" style="color:white">QUẢN LÝ TOUR</a>
+                  <a class="nav-hover" href="#">QUẢN LÝ TOUR</a>
                 </li>
                 <li class="nav-item nav-margin">
-                   <a class="nav-link" href="#" style="color:white">XE DỊCH VỤ</a>
+                   <a class="nav-hover" href="#" >XE DỊCH VỤ</a>
                 </li>
               
                 <li class="nav-item nav-margin">
-                   <a class="nav-link" href="#" style="color:white">KHÁCH SẠN</a>
+                   <a class="nav-hover" href="#">KHÁCH SẠN</a>
                 </li>
 
                 <li class="nav-item nav-margin">
-                   <a class="nav-link" href="#" style="color:white">CẨM NANG DU LỊCH</a>
+                   <a class="nav-hover" href="#" >CẨM NANG DU LỊCH</a>
                 </li>
 
                 <li class="nav-item nav-margin">
-                   <a class="nav-link" href="#" style="color:white">VIDEO</a>
+                   <a class="nav-hover" href="#" >VIDEO</a>
                 </li>
 
                 <li class="nav-item nav-margin">
-                   <a class="nav-link" href="#" style="color:white">LIÊN HỆ</a>
+                   <a class="nav-hover" href="#" >LIÊN HỆ</a>
                 </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                  <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+                  <div class="dropdown">
+                      <button class="btn dropdown-toggle btn-link" type="button" data-toggle="dropdown">
+                          <img src="Public/images/icon-search.png" width="20px"></button>
+                      <ul class="dropdown-menu">
+                        <li><input type="text" name="search">
+                            <button class="btn btn-link" type="submit"><img src="Public/images/icon-search.png" width="20px"></button>
+                        </li>
+                      </ul>
+                    </div>
                 </form>
           </div>
         </nav>
