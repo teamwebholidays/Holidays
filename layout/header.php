@@ -1,11 +1,11 @@
-<header class="container-fluid" style="background-image: url('Public/images/banner-2.jpg');">
+<header class="container-fluid" style="background-image: url('Public/images/banner-2.jpg'); background-repeat: no-repeat;">
   <div class="container">
     <div class="row">
       <div class="col-md-2">
 
       </div>
       <div class="col-md-10" align="center">
-        <nav class="navbar navbar-expand-md navbar-light">
+        <nav class="navbar navbar-expand-md navbar-light navbar-fixed-top">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
@@ -39,9 +39,10 @@
                   <div class="dropdown" align="center">
                       <button class="btn dropdown-toggle btn-link" type="button" data-toggle="dropdown">
                           <img src="Public/images/icon-search.png" width="20px"></button>
-                      <ul class="dropdown-menu">
-                        <li><input type="text" name="search">
-                            <button class="btn btn-link" type="submit"><img src="Public/images/icon-search.png" width="20px"></button>
+                      <ul class="dropdown-menu search" style="">
+                        <li>
+                            <input type="text" name="search" style="" placeholder="Search...">
+                            <button class="btn btn-link" type="submit" style=""><img src="Public/images/icon-search.png" width="20px"></button>
                         </li>
                       </ul>
                     </div>
@@ -62,12 +63,14 @@
 
 
     <div class="row" >
-      <div class="col-md-2">
-      </div>
-      <div class="col-md-10">
-        <h1 style="color:white; font-size: 8vw" align="center">HLTP HOLIDAYS</h1>
-         <p style="color:white;float:left; font-size: 1em">CHUYÊN TRANG THÔNG TIN MAI MỐI</p>
+      <div class="col-md-12">
+        <div class="title">
+          <h1 style="" align="center">HLTP HOLIDAYS</h1>
+        </div>
+        <div>
+         <p style="color:white;float:left; font-size: 1em">CHUYÊN TRANG THÔNG TIN DU LỊCH</p>
          <span class="border"> </span>
+        </div>
       </div>
     </div>
 

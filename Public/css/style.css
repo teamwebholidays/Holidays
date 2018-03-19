@@ -1,24 +1,46 @@
-
+/*-------------------------STYLE HEADER--------------------------------*/
 .nav-margin{
-	margin-right:20px;
+	margin-right:40px;
 }
 .border{
-	width:40vw;
+	width:50vw;
 	display: inline-block;
 	border-bottom: 1px solid white;
 }
 
-@keyframes example {
-    0%   {color: red;}
-    25%  {color: yellow;}
-    50%  {color: blue;}
-    100% {color: green;}
+@-webkit-keyframes aitf {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
 }
 
-header h1 {
-	  animation-name: example;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
+@font-face {
+    font-family: fonttittle;
+    src: url(../../Public/font/UTMThanhNhacTL.ttf);
+}
+
+.title h1 {
+  color:white;
+  font-size:7vw;
+  font-family:fonttittle; 
+  text-outline: 2px 2px #ff0000;
+
+  /*letter-spacing: 0;
+  padding: .25em 0 .325em;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 0 80px rgba(255,255,255,.5);
+
+
+  background: url(../../Public/images/animated_text_fill.png) repeat-x;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+
+
+  -webkit-backface-visibility: hidden;*/
+
 }
 
 .nav-hover{
@@ -65,3 +87,17 @@ header h1 {
 .text:hover {
   font-weight: bolder;  
 }
+
+
+.search li input[type="text"]{
+  margin-left: 20px; height: 35px
+}
+
+.search{
+  width: 280px;opacity: 0.6;
+}
+
+.search li button{
+  background-color:yellow; height: 38px; margin-top: -8px;
+}
+/*----------------------------END STYLE HEADER------------------------------ */
