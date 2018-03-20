@@ -12,10 +12,22 @@
             include('layout/header.php');
           ?>
         <!-- end header-->
-          <?php
-            include('layout/tinnoibat.php');
-          ?>
+
             <!-- content -->
+
+            <!-- DAT TOUR -->
+              <?php
+                include('layout/dattour.php');
+              ?>
+            <!-- END DAT TOUR -->
+
+            <!-- TOUR NOI BAT -->
+              <?php
+                include('layout/tinnoibat.php');
+              ?>
+            <!-- END TOUR NOI BAT -->
+
+
             <!-- end content -->
 
             <!-- footer -->
