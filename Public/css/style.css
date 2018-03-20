@@ -118,6 +118,7 @@
     left: 55%;
     transform: translate(-50%, -50%);
     font-weight: bolder;
+    width: 15em
 }
 
 .centered:hover{
@@ -148,6 +149,12 @@
 .bg-one{
   background-image: url('../../Public/images/ngu-hanh-son.jpg');
 }
+.bg-true{
+  background-image: url('../../Public/images/cu-lao-cham.jpg');
+}
+.bg-three{
+  background-image: url('../../Public/images/rung-dua.jpg');
+}
 
 .parent:hover .child, .parent:focus .child {
     -ms-transform: scale(1.2);
@@ -174,5 +181,14 @@
     top: 0;
     left: 0;
     background-color: rgba(52,73,94,0.75);
+}
+
+.button-book{
+  background-color: white;
+  border-radius: 50px;
+  color:#455FFB;
+}
+.button-book:hover{
+  color:rgb(172,214,60);
 }
 /*----------------------------END STYLE TIN NOI BAT------------------------------ */
