@@ -6,7 +6,7 @@
       </div>
       <div class="col-md-10" align="center">
         <nav class="navbar navbar-expand-md navbar-light navbar-fixed-top">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: white; opacity: 0.7">
           <span class="navbar-toggler-icon"></span>
           </button>
 
@@ -35,18 +35,22 @@
                    <a class="nav-hover" href="#" >LIÊN HỆ</a>
                 </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0" >
-                  <div class="dropdown" align="center">
+
+                <form class="form-inline my-2 my-lg-0">
+                  <div class="dropdown">
                       <button class="btn dropdown-toggle btn-link" type="button" data-toggle="dropdown">
                           <img src="Public/images/icon-search.png" width="20px"></button>
-                      <ul class="dropdown-menu search" style="">
+                      <ul class="dropdown-menu search">
                         <li>
-                            <input type="text" name="search" style="" placeholder="Search...">
-                            <button class="btn btn-link" type="submit" style=""><img src="Public/images/icon-search.png" width="20px"></button>
+                            <div class="form-group">
+                              <input type="text" name="search" style="" placeholder="Search..." class="form-control" size="15">
+                              <button class="btn btn-link" type="submit"><img src="Public/images/icon-search.png" width="20px"></button>
+                            </div>
                         </li>
                       </ul>
                     </div>
                 </form>
+
           </div>
         </nav>
       </div>
@@ -80,7 +84,7 @@
       </div>
       <div class="outer col-md-4" align="center">
         <div class="button">
-          <div class="text">Khám phá ngay</div>
+          <div class="text">KHÁM PHÁ NGAY</div>
         </div>
       </div>
     </div>

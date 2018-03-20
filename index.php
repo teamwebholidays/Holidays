@@ -12,7 +12,9 @@
             include('layout/header.php');
           ?>
         <!-- end header-->
-
+          <?php
+            include('layout/tinnoibat.php');
+          ?>
             <!-- content -->
             <!-- end content -->
 
