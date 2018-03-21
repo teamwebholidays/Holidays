@@ -15,7 +15,7 @@
 
 @font-face {
     font-family: fonttittle;
-    src: url(../../Public/font/UTMThanhNhacTL.ttf);
+    src: url(../../public/font/UTMThanhNhacTL.ttf);
 }
 
 .title h1 {
@@ -147,13 +147,13 @@
 }
 
 .bg-one{
-  background-image: url('../../Public/images/ngu-hanh-son.jpg');
+  background-image: url('../../public/images/tour_noi_bat/ngu-hanh-son.jpg');
 }
 .bg-true{
-  background-image: url('../../Public/images/cu-lao-cham.jpg');
+  background-image: url('../../public/images/tour_noi_bat/cu-lao-cham.jpg');
 }
 .bg-three{
-  background-image: url('../../Public/images/rung-dua.jpg');
+  background-image: url('../../public/images/tour_noi_bat/rung-dua.jpg');
 }
 
 .parent:hover .child, .parent:focus .child {
@@ -192,3 +192,31 @@
   color:rgb(172,214,60);
 }
 /*----------------------------END STYLE TIN NOI BAT------------------------------ */
+
+/*----------------------------STYLE TIN NOI TUC DU LICH------------------------------ */
+.mainttdulich{
+  margin-top: 30px; 
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.mainttdulich div{
+  text-align:center;
+}
+.mainttdulich h2{
+  color:#E60606;
+}
+
+.noidungttdulich h4{
+  color:#E60606;
+}
+
+.noidungttdulich a{
+  text-decoration: none;
+  color: #FF703E;
+  font-weight: bold;
+}
+.noidungttdulich a:hover{
+  opacity: 0.5;
+}
+/*----------------------------END STYLE TIN NOI TUC DU LICH------------------------------ */

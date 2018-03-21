@@ -7,8 +7,8 @@
     <title>Holiday</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="Public/Bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="public/Bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="Public/css/style.css" rel="stylesheet">
+    <link href="public/css/style.css" rel="stylesheet">
 </head>

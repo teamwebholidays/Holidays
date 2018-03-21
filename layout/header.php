@@ -1,4 +1,4 @@
-<header class="container-fluid" style="background-image: url('Public/images/banner-2.jpg'); background-repeat: no-repeat;">
+<header class="container-fluid" style="background-image: url('public/images/icon-back-logo/banner-2.jpg'); background-repeat: no-repeat;">
   <div class="container">
     <div class="row">
       <div class="col-md-2">
@@ -24,7 +24,7 @@
                 </li>
 
                 <li class="nav-item nav-margin">
-                   <a class="nav-hover" href="#" >CẨM NANG DU LỊCH</a>
+                   <a class="nav-hover" href="tin_tuc_du_lich.php" >TIN TỨC DU LỊCH</a>
                 </li>
 
                 <li class="nav-item nav-margin">
@@ -39,12 +39,12 @@
                 <form class="form-inline my-2 my-lg-0">
                   <div class="dropdown">
                       <button class="btn dropdown-toggle btn-link" type="button" data-toggle="dropdown">
-                          <img src="Public/images/icon-search.png" width="20px"></button>
+                          <img src="public/images/icon-back-logo/icon-search.png" width="20px"></button>
                       <ul class="dropdown-menu search">
                         <li>
                             <div class="form-group">
                               <input type="text" name="search" style="" placeholder="Search..." class="form-control" size="15">
-                              <button class="btn btn-link" type="submit"><img src="Public/images/icon-search.png" width="20px"></button>
+                              <button class="btn btn-link" type="submit"><img src="public/images/icon-back-logo/icon-search.png" width="20px"></button>
                             </div>
                         </li>
                       </ul>
@@ -61,7 +61,7 @@
       <div class="col-md-4">
       </div>
       <div class="col-md-4" align="center">
-        <img src="Public/images/logo-header.png" width="150px" height="150px">
+        <img src="public/images/icon-back-logo/logo-header.png" width="150px" height="150px">
       </div>
     </div>
 
