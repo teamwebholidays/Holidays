@@ -255,3 +255,56 @@
      border-top: 1px solid white;
 }
 /*----------------------------END STYLE DIEM DEN YEU THICH------------------------------ */
+
+
+/*----------------------------STYLE FOOTER------------------------------ */
+.main-footer{
+  background-color: #1D1C1C;
+  color:white;
+  margin-top:50px;
+  padding: 30px; 
+}
+
+.tittle-footer{
+  border-bottom:5px solid #D8D3D3;
+}
+.nd-footer ul{
+  list-style-type:none; 
+}
+.nd-footer ul li a{
+  text-decoration: none;
+  color:white;
+}
+
+.nd-footer ul li a:hover{
+  color:yellow;
+}
+
+.nd-footer ul li{
+  margin-left: -35px;
+}
+
+.line-footer{
+  border:1px solid #7D7B7B;
+}
+
+.img-footer{
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.form-footer input[type=text]{
+  background-color: #1D1C1C;
+  float: left;
+  width: 79%;
+}
+
+.form-footer button{
+  background-color: #1D1C1C;
+  float: left;
+  color:white;
+}
+.form-footer button:hover{
+  background-color: #7D7B7B;
+}
+/*----------------------------END STYLE FOOTER------------------------------ */
