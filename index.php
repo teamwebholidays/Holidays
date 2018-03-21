@@ -26,8 +26,11 @@
                 include('layout/tinnoibat.php');
               ?>
             <!-- END TOUR NOI BAT -->
-
-
+            
+             <?php
+                include('layout/diemdenyeuthich.php');
+              ?>
+        
             <!-- end content -->
 
             <!-- footer -->

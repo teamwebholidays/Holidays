@@ -220,3 +220,38 @@
   opacity: 0.5;
 }
 /*----------------------------END STYLE TIN NOI TUC DU LICH------------------------------ */
+
+/*----------------------------STYLE DIEM DEN YEU THICH------------------------------ */
+.titleddyeuthich h2{
+  color:#C50000;
+}
+.titleddyeuthich{
+  margin-top:30px;
+  margin-bottom:30px;
+}
+
+.image:hover{
+  opacity: 0.5;
+}
+
+.text-yeu-thich{
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color:#FD0303;
+    font-size:20px;
+    font-weight: bold;
+}
+
+.text-yeu-thich_02{
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color:white;
+     font-size:15px;
+     font-style: italic;
+     border-top: 1px solid white;
+}
+/*----------------------------END STYLE DIEM DEN YEU THICH------------------------------ */
