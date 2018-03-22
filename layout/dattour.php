@@ -73,7 +73,7 @@
                 <div class="col-md-6 col-sm-4">
                     <label>Ngày khởi hành</label>
 <!--                    <input type="text" class="form-control"/>-->
-                    <input type="text" name="ngaydatlich" id="datepicker" class="form-control" onchange="handler(event)" />
+                    <input type="text" name="ngaykhoihanh" id="datepicker" class="form-control"/>
                 </div>
 
                 <div class="col-md-6 col-sm-4">
