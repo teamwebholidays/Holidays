@@ -1,0 +1,371 @@
+/*-------------------------STYLE HEADER--------------------------------*/
+.nav-margin{
+	margin-right:40px;
+}
+.border{
+	width:50vw;
+	display: inline-block;
+	border-bottom: 1px solid white;
+}
+
+@-webkit-keyframes aitf {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+@font-face {
+    font-family: fonttittle;
+    src: url(../../public/font/UTMThanhNhacTL.ttf);
+}
+
+.title h1 {
+  color:white;
+  font-size:7vw;
+  font-family:fonttittle; 
+  text-outline: 2px 2px #ff0000;
+
+  /*letter-spacing: 0;
+  padding: .25em 0 .325em;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 0 80px rgba(255,255,255,.5);
+
+
+  background: url(../../Public/images/animated_text_fill.png) repeat-x;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+
+
+  -webkit-backface-visibility: hidden;*/
+
+}
+
+.nav-hover{
+  text-decoration: none;
+  color:white;
+}
+
+.nav-hover:hover{
+  color:yellow;
+}
+
+
+.outer {
+  margin: 50px;
+}
+
+.button {
+  border: 1px solid white;
+  border-radius: 50px;
+  width: 200px;
+  height: 30px;
+  display: block;
+
+  background: linear-gradient(to right, yellow 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+}
+
+.button:hover {
+  background-position: left bottom;
+}
+
+.text {
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px; 
+  color: green;
+  transition: all .2s ease-out;
+  display: block;
+}
+
+.text:hover {
+  font-weight: bolder;  
+}
+
+
+.search li input[type="text"]{
+  margin-left: 10px; height: 35px;
+  width: 60%;
+}
+
+.search{
+  opacity: 0.6;
+  padding: 5px;
+  width: 180px;
+}
+
+.search li button{
+  background-color:yellow; height: 38px;float: left; margin-left: 10px;
+}
+/*----------------------------END STYLE HEADER------------------------------ */
+
+/*---------------------------- STYLE DAT TOUR------------------------------ */
+.dattour{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border: 1px solid red;
+  background-image: url('https://travel.com.vn/Images/SlideShow/sl_180307_tour-30.4-1.5_1920-570_2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.dattour form{
+  border: 1px solid green;
+  max-width: 480px;
+  margin-left: 20px;
+  padding: 15px;
+  background-color: rgba(0,0,0,0.5);
+}
+.dattour form h3{
+    text-transform: uppercase;
+    color: #ff1212;
+    font-size: 1.2em;
+}
+.dattour form label{
+    color: #fff;
+}
+.dattour form > div{
+    border-top: 1px dashed rgba(255,255,255,.2);
+}
+.dattour form > div div{
+    margin-top: 5px;
+}
+.dattour .search-tour button{
+    background-color: #c50000;
+    color: #fff;
+}
+/*---------------------------- END STYLE DAT TOUR------------------------------ */
+
+/*---------------------------- STYLE TIN NOI BAT------------------------------ */
+
+.main_tinnoibat{
+  color:white;
+  padding-top: 20px;
+}
+.centered {
+    color:white;
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    font-weight: bolder;
+    width: 15em
+}
+
+.centered:hover{
+  color:yellow;
+}
+
+.parent {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.child {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.bg-one{
+  background-image: url('../../public/images/tour_noi_bat/ngu-hanh-son.jpg');
+}
+.bg-true{
+  background-image: url('../../public/images/tour_noi_bat/cu-lao-cham.jpg');
+}
+.bg-three{
+  background-image: url('../../public/images/tour_noi_bat/rung-dua.jpg');
+}
+
+.parent:hover .child, .parent:focus .child {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.parent:hover .child:before, .parent:focus .child:before {
+    display: block;
+}
+
+.parent:hover a, .parent:focus a {
+    display: block;
+}
+
+.child:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(52,73,94,0.75);
+}
+
+.button-book{
+  background-color: white;
+  border-radius: 50px;
+  color:#455FFB;
+}
+.button-book:hover{
+  color:rgb(172,214,60);
+}
+/*----------------------------END STYLE TIN NOI BAT------------------------------ */
+
+/*----------------------------STYLE TIN NOI TUC DU LICH------------------------------ */
+.mainttdulich{
+  margin-top: 30px; 
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.mainttdulich div{
+  text-align:center;
+}
+.mainttdulich h2{
+  color:#E60606;
+}
+
+.noidungttdulich h4{
+  color:#E60606;
+}
+
+.noidungttdulich a{
+  text-decoration: none;
+  color: #FF703E;
+  font-weight: bold;
+}
+.noidungttdulich a:hover{
+  opacity: 0.5;
+}
+/*----------------------------END STYLE TIN NOI TUC DU LICH------------------------------ */
+
+/*----------------------------STYLE DIEM DEN YEU THICH------------------------------ */
+.titleddyeuthich h2{
+  color:#C50000;
+}
+.titleddyeuthich{
+  margin-top:30px;
+  margin-bottom:30px;
+}
+
+.image:hover{
+  opacity: 0.5;
+}
+
+.text-yeu-thich{
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color:#FD0303;
+    font-size:20px;
+    font-weight: bold;
+}
+
+.text-yeu-thich_02{
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color:white;
+     font-size:15px;
+     font-style: italic;
+     border-top: 1px solid white;
+}
+/*----------------------------END STYLE DIEM DEN YEU THICH------------------------------ */
+
+
+/*----------------------------STYLE FOOTER------------------------------ */
+.main-footer{
+  background-color: #1D1C1C;
+  color:white;
+  margin-top:50px;
+  padding: 30px; 
+}
+
+.tittle-footer{
+  border-bottom:5px solid #D8D3D3;
+}
+.nd-footer ul{
+  list-style-type:none; 
+}
+.nd-footer ul li a{
+  text-decoration: none;
+  color:white;
+}
+
+.nd-footer ul li a:hover{
+  color:yellow;
+}
+
+.nd-footer ul li{
+  margin-left: -35px;
+}
+
+.line-footer{
+  border:1px solid #7D7B7B;
+}
+
+.img-footer{
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.form-footer input[type=text]{
+  background-color: #1D1C1C;
+  float: left;
+  width: 79%;
+}
+
+.form-footer button{
+  background-color: #1D1C1C;
+  float: left;
+  color:white;
+}
+.form-footer button:hover{
+  background-color: #7D7B7B;
+}
+/*----------------------------END STYLE FOOTER------------------------------ */
+
+/*----------------------------STYLE CHI TIET TOUR------------------------------ */
+.maincttour{
+  background-color:#EFEDED;
+}
+.maincttour div h3{
+  padding: 10px;
+}
+
+ .carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+
+  .btndattour input[type=submit]{
+    width:100%;
+    height: 100%;
+    background-color: #c50000;
+    color:white;
+    font-size: 1.5em;
+  }
+
+  .btndattour input[type=submit]:hover{
+    opacity: 0.6;
+  }
+/*----------------------------END STYLE CHI TIET TOUR------------------------------ */
