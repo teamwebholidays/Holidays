@@ -104,6 +104,41 @@
 }
 /*----------------------------END STYLE HEADER------------------------------ */
 
+/*---------------------------- STYLE DAT TOUR------------------------------ */
+.dattour{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border: 1px solid red;
+  background-image: url('https://travel.com.vn/Images/SlideShow/sl_180307_tour-30.4-1.5_1920-570_2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.dattour form{
+  border: 1px solid green;
+  max-width: 480px;
+  margin-left: 20px;
+  padding: 15px;
+  background-color: rgba(0,0,0,0.5);
+}
+.dattour form h3{
+    text-transform: uppercase;
+    color: #ff1212;
+    font-size: 1.2em;
+}
+.dattour form label{
+    color: #fff;
+}
+.dattour form > div{
+    border-top: 1px dashed rgba(255,255,255,.2);
+}
+.dattour form > div div{
+    margin-top: 5px;
+}
+.dattour .search-tour button{
+    background-color: #c50000;
+    color: #fff;
+}
+/*---------------------------- END STYLE DAT TOUR------------------------------ */
 
 /*---------------------------- STYLE TIN NOI BAT------------------------------ */
 
