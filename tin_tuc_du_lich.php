@@ -21,16 +21,13 @@
               ?>
             <!-- END DAT TOUR -->
 
-            <!-- TOUR NOI BAT -->
-              <?php
-                include('layout/tinnoibat.php');
-              ?>
-            <!-- END TOUR NOI BAT -->
-            
+            <!-- TOUR TIN TỨC DU LỊCH-->
              <?php
-                include('layout/diemdenyeuthich.php');
+                include('layout/tintucdulich.php');
               ?>
-        
+            <!-- END TOUR TIN TỨC DU LỊCH -->
+
+
             <!-- end content -->
 
             <!-- footer -->

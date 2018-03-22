@@ -72,7 +72,8 @@
                 </div>
                 <div class="col-md-6 col-sm-4">
                     <label>Ngày khởi hành</label>
-                    <input type="text" class="form-control"/>
+<!--                    <input type="text" class="form-control"/>-->
+                    <input type="text" name="ngaydatlich" id="datepicker" class="form-control" onchange="handler(event)" />
                 </div>
 
                 <div class="col-md-6 col-sm-4">
@@ -108,7 +109,7 @@
                 </div>
                 <div class="col-md-6 col-sm-6">
                     <label>&nbsp;</label>
-                    <div>
+                    <div class="search-tour">
                         <button type="submit" class="btn btn-default col-md-8 col-sm-8">
                             <i class="fa fa-search"></i> <span>Tìm kiếm</span>
                         </button>

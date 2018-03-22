@@ -15,7 +15,7 @@
 
 @font-face {
     font-family: fonttittle;
-    src: url(../../Public/font/UTMThanhNhacTL.ttf);
+    src: url(../../public/font/UTMThanhNhacTL.ttf);
 }
 
 .title h1 {
@@ -134,6 +134,10 @@
 .dattour form > div div{
     margin-top: 5px;
 }
+.dattour .search-tour button{
+    background-color: #c50000;
+    color: #fff;
+}
 /*---------------------------- END STYLE DAT TOUR------------------------------ */
 
 /*---------------------------- STYLE TIN NOI BAT------------------------------ */
@@ -178,13 +182,13 @@
 }
 
 .bg-one{
-  background-image: url('../../Public/images/ngu-hanh-son.jpg');
+  background-image: url('../../public/images/tour_noi_bat/ngu-hanh-son.jpg');
 }
 .bg-true{
-  background-image: url('../../Public/images/cu-lao-cham.jpg');
+  background-image: url('../../public/images/tour_noi_bat/cu-lao-cham.jpg');
 }
 .bg-three{
-  background-image: url('../../Public/images/rung-dua.jpg');
+  background-image: url('../../public/images/tour_noi_bat/rung-dua.jpg');
 }
 
 .parent:hover .child, .parent:focus .child {
@@ -223,3 +227,119 @@
   color:rgb(172,214,60);
 }
 /*----------------------------END STYLE TIN NOI BAT------------------------------ */
+
+/*----------------------------STYLE TIN NOI TUC DU LICH------------------------------ */
+.mainttdulich{
+  margin-top: 30px; 
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.mainttdulich div{
+  text-align:center;
+}
+.mainttdulich h2{
+  color:#E60606;
+}
+
+.noidungttdulich h4{
+  color:#E60606;
+}
+
+.noidungttdulich a{
+  text-decoration: none;
+  color: #FF703E;
+  font-weight: bold;
+}
+.noidungttdulich a:hover{
+  opacity: 0.5;
+}
+/*----------------------------END STYLE TIN NOI TUC DU LICH------------------------------ */
+
+/*----------------------------STYLE DIEM DEN YEU THICH------------------------------ */
+.titleddyeuthich h2{
+  color:#C50000;
+}
+.titleddyeuthich{
+  margin-top:30px;
+  margin-bottom:30px;
+}
+
+.image:hover{
+  opacity: 0.5;
+}
+
+.text-yeu-thich{
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color:#FD0303;
+    font-size:20px;
+    font-weight: bold;
+}
+
+.text-yeu-thich_02{
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color:white;
+     font-size:15px;
+     font-style: italic;
+     border-top: 1px solid white;
+}
+/*----------------------------END STYLE DIEM DEN YEU THICH------------------------------ */
+
+
+/*----------------------------STYLE FOOTER------------------------------ */
+.main-footer{
+  background-color: #1D1C1C;
+  color:white;
+  margin-top:50px;
+  padding: 30px; 
+}
+
+.tittle-footer{
+  border-bottom:5px solid #D8D3D3;
+}
+.nd-footer ul{
+  list-style-type:none; 
+}
+.nd-footer ul li a{
+  text-decoration: none;
+  color:white;
+}
+
+.nd-footer ul li a:hover{
+  color:yellow;
+}
+
+.nd-footer ul li{
+  margin-left: -35px;
+}
+
+.line-footer{
+  border:1px solid #7D7B7B;
+}
+
+.img-footer{
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.form-footer input[type=text]{
+  background-color: #1D1C1C;
+  float: left;
+  width: 79%;
+}
+
+.form-footer button{
+  background-color: #1D1C1C;
+  float: left;
+  color:white;
+}
+.form-footer button:hover{
+  background-color: #7D7B7B;
+}
+/*----------------------------END STYLE FOOTER------------------------------ */
