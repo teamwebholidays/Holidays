@@ -1,3 +1,6 @@
+body{
+    background-color: #f2f2f2;
+}
 /*-------------------------STYLE HEADER--------------------------------*/
 .nav-margin{
 	margin-right:40px;
@@ -153,6 +156,40 @@
     
 }
 /*---------------------------- END STYLE DAT TOUR------------------------------ */
+
+
+/*---------------------------- STYLE TOUR MOI NHAT ------------------------------ */
+.tourmoinhat{
+    border: 1px solid green;
+    padding-bottom: 30px;
+}
+.news{
+    border: 1px solid red;
+}
+.news .thumb{
+    overflow: hidden;
+}
+.news img{
+  transition: all 0.5s;
+  display: block;
+  width: 100%;
+  
+}
+.news img:hover{
+  transform: scale(1.2);
+}
+.news .title{
+    background-color: #fff;
+    padding: 0 10px 5px;
+}
+.news .title a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 5px 0;
+}
+/*---------------------------- END TOUR MOI NHAT------------------------------ */
+
 
 /*---------------------------- STYLE TIN NOI BAT------------------------------ */
 
@@ -383,3 +420,47 @@
     opacity: 0.6;
   }
 /*----------------------------END STYLE CHI TIET TOUR------------------------------ */
+
+/*----------------------------STYLE CHI TIET TIN TUC------------------------------ */
+.maincttintuc{
+  margin-top: 30px;
+}
+
+.maincttintuc h4{
+  color:#D40202;
+}
+
+.maincttintuc img{
+  width:100%;
+  height:100%;
+}
+
+.maincttintuc a{
+  text-decoration: none;
+}
+
+.noidungchitiettintuc{
+  margin-top: 20px;
+}
+
+.tinkhac{
+  margin-top: 30px;
+}
+
+.tinkhac h3{
+  color:#EC9101;
+}
+
+.tinkhac ul li a{
+  color:black;
+}
+
+.tinkhac div ul li a:hover{
+  color:#F20000;
+}
+
+
+
+
+
+/*----------------------------END STYLE CHI TIET TIN TUC------------------------------ */
