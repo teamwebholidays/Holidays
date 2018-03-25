@@ -1,6 +1,6 @@
 <header class="container-fluid">
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <a class="navbar-brand" href="#"><img src="public/images/icon-back-logo/logo-travel.png" title="logo-travel" width="70%"></a>
+    <a class="navbar-brand" href="index.php"><img src="public/images/icon-back-logo/logo-travel.png" title="logo-travel" width="70%"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -10,7 +10,7 @@
         <li class="nav-item active">
           <a class="nav-link" href="#"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;DU LỊCH<span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="#"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;DU LỊCH<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
@@ -22,6 +22,9 @@
               <a href="#">Link 3</a>
             </div>
           </div>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="tin_tuc_du_lich.php"><i class="fa fa-newspaper-o" aria-hidden="true"></i>&nbsp;TIN TỨC<span class="sr-only">(current)</span></a>
         </li>
       </ul>
     </div>
