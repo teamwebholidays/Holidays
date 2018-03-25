@@ -2,108 +2,49 @@ body{
     background-color: #f2f2f2;
 }
 /*-------------------------STYLE HEADER--------------------------------*/
-.nav-margin{
-	margin-right:40px;
-}
-.border{
-	width:50vw;
-	display: inline-block;
-	border-bottom: 1px solid white;
-}
-
-@-webkit-keyframes aitf {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 100% 50%; }
-}
-
-@font-face {
-    font-family: fonttittle;
-    src: url(../../public/font/UTMThanhNhacTL.ttf);
-}
-
-.title h1 {
-  color:white;
-  font-size:7vw;
-  font-family:fonttittle; 
-  text-outline: 2px 2px #ff0000;
-
-  /*letter-spacing: 0;
-  padding: .25em 0 .325em;
-  display: block;
-  margin: 0 auto;
-  text-shadow: 0 0 80px rgba(255,255,255,.5);
-
-
-  background: url(../../Public/images/animated_text_fill.png) repeat-x;
-  -webkit-background-clip: text;
-  background-clip: text;
-
-  -webkit-text-fill-color: transparent;
-  -webkit-animation: aitf 80s linear infinite;
-
-
-  -webkit-backface-visibility: hidden;*/
-
-}
-
-.nav-hover{
-  text-decoration: none;
-  color:white;
-}
-
-.nav-hover:hover{
-  color:yellow;
+.nav-main ul li{
+  padding: 0px 30px 0px 30px;
 }
 
 
-.outer {
-  margin: 50px;
+.dropbtn {
+    background-color: #f8f9fa;
+    color: black;
+    padding: 10px 0px 10px 0px;
+    border: none;
 }
 
-.button {
-  border: 1px solid white;
-  border-radius: 50px;
-  width: 200px;
-  height: 30px;
-  display: block;
-
-  background: linear-gradient(to right, yellow 50%, white 50%);
-  background-size: 200% 100%;
-  background-position: right bottom;
-  transition: all .5s ease-out;
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
 
-.button:hover {
-  background-position: left bottom;
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(1,0,0,0.6);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
 }
 
-.text {
-  text-align: center;
-  font-size: 16px;
-  line-height: 30px; 
-  color: green;
-  transition: all .2s ease-out;
-  display: block;
+.dropdown-content a {
+     color:white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px dotted white;
 }
 
-.text:hover {
-  font-weight: bolder;  
+.dropdown-content a:hover {color:red;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
-
-.search li input[type="text"]{
-  margin-left: 10px; height: 35px;
-  width: 60%;
-}
-
-.search{
-  opacity: 0.6;
-  padding: 5px;
-  width: 180px;
-}
-
-.search li button{
-  background-color:yellow; height: 38px;float: left; margin-left: 10px;
+.dropdown:hover .dropbtn {
+    color:#FF0000;
 }
 /*----------------------------END STYLE HEADER------------------------------ */
 
@@ -115,6 +56,7 @@ body{
   background-image: url('https://travel.com.vn/Images/SlideShow/sl_180307_tour-30.4-1.5_1920-570_2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    margin-top: 65px;
 }
 .dattour form{
   border: 1px solid green;
