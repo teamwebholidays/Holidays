@@ -44,11 +44,6 @@
                 include('layout/script.php');
               ?>
             <!--end script -->
-            <script>
-    $( function() {
-      $( "#datepicker" ).datepicker();
-    } );
-    </script>
     </body>
 
 </html>

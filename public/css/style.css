@@ -138,6 +138,20 @@
     background-color: #c50000;
     color: #fff;
 }
+.datepicker-form{
+    position: relative;
+}
+.datepicker-form ipnput{
+    padding-right: 40px;
+}
+.datepicker-form i{
+    position: absolute;
+    right: 0;
+    top: 42px;
+    padding-right: 25px;
+    font-size: 20px;
+    
+}
 /*---------------------------- END STYLE DAT TOUR------------------------------ */
 
 /*---------------------------- STYLE TIN NOI BAT------------------------------ */

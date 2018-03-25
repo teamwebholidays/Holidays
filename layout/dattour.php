@@ -3,7 +3,7 @@
         <form name="frmDatTour" action="#" method="POST">
             <h3>Tìm tour</h3>
             <div class="row form-group">
-                <div class="col-md-6 col-sm-4">
+                <div class="col-md-6 col-sm-4 col-6">
                     <label>Nơi khởi hành</label>
                     <select class="form-control input-md" id="departureID" name="departureID">
                         <option value="0">Nơi khởi hành</option>
@@ -32,7 +32,7 @@
                     </select> 
                 </div>
                 
-                <div class="col-md-6 col-sm-4">
+                <div class="col-md-6 col-sm-4 col-6">
                     <label>Loại tour</label>
                         <div>
                             <select class="form-control input-md" id="departureID" name="departureID">
@@ -42,7 +42,7 @@
                         </div>
                 </div>
 
-                <div class="col-md-6 col-sm-4">
+                <div class="col-md-6 col-sm-4 col-6">
                     <label>Nơi đến</label>
                     <select class="form-control input-md" id="departureID" name="departureID">
                         <option value="0">Nơi đến</option>
@@ -70,13 +70,13 @@
                         <option value="30">Quảng Bình</option>
                     </select> 
                 </div>
-                <div class="col-md-6 col-sm-4">
+                <div class="col-md-6 col-sm-4 col-6 datepicker-form">
                     <label>Ngày khởi hành</label>
-<!--                    <input type="text" class="form-control"/>-->
-                    <input type="text" name="ngaykhoihanh" id="datepicker" class="form-control"/>
+                    <input type="text" value="<?php echo date("d-m-Y") ?>" id="datepicker" class="form-control">
+                    <i class="fa fa-calendar"></i>
                 </div>
 
-                <div class="col-md-6 col-sm-4">
+                <div class="col-md-6 col-sm-4 col-6">
                     <label>Giá tour</label>
                     <select class="form-control input-md" id="departureID" name="departureID">
                         <option value="0">Giá</option>
@@ -88,7 +88,7 @@
                         <option value="6">Trên 10 Triệu</option>
                     </select>
                 </div>
-                <div class="col-md-6 col-sm-4">
+                <div class="col-md-6 col-sm-4 col-6">
                     <label>Dòng tour</label>
                     <select class="form-control input-md" id="departureID" name="departureID">
                         <option value="1"> Tất cả</option>
@@ -99,7 +99,7 @@
                     </select>
                 </div>
 
-                <div class="col-md-6 col-sm-6">
+                <div class="col-md-6 col-sm-6 col-6">
                     <label>Tình trạng</label>
                     <select class="form-control input-md" id="departureID" name="departureID">
                         <option value="1"> Tất cả</option>
@@ -107,7 +107,7 @@
                         <option value="3">Hết chỗ</option>
                     </select>
                 </div>
-                <div class="col-md-6 col-sm-6">
+                <div class="col-md-6 col-sm-6 col-6">
                     <label>&nbsp;</label>
                     <div class="search-tour">
                         <button type="submit" class="btn btn-default col-md-8 col-sm-8">

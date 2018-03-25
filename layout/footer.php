@@ -101,7 +101,7 @@
 			      <button class="btn">Gửi</button>
 			    </div>
 
-				<div style="margin-top: 30px">&nbsp</div>
+				<div style="margin-top: 30px">&nbsp;</div>
 
 			    <p class="tittle-footer">TÌM KIẾM</p>
 				<div class="form-group form-footer">    
