@@ -163,8 +163,11 @@ body{
     border: 1px solid green;
     padding-bottom: 30px;
 }
+.tourmoinhat .news:nth-child(4),.news:nth-child(5),.news:nth-child(6){
+    margin-top: 20px;
+}
 .news{
-    border: 1px solid red;
+/*    border: 1px solid red;*/
 }
 .news .thumb{
     overflow: hidden;
@@ -187,7 +190,31 @@ body{
     font-size: 1.2rem;
     display: inline-block;
     padding: 5px 0;
+    color: #c50000;
 }
+.news .title p{
+/*    border: 1px solid red;*/
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0;
+    transition: all .5s;
+/*    text-decoration: line-through;*/
+}
+/*
+.news .title p span{
+    text-decoration: overline;
+    font-size: 1rem;
+}
+*/
+.thongtin-tourmoinhat{
+    border-top: 0.8px solid #c50000;
+}
+/*
+.thongtin-tourmoinhat div[class="col-md-4"]{
+    color: blue;
+    text-align: right;
+}
+*/
 /*---------------------------- END TOUR MOI NHAT------------------------------ */
 
 
