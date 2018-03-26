@@ -2,7 +2,7 @@
 	<div class="row">
 		<div class="col-md-12">
 			<h4>THƯƠNG NHỚ NHỮNG MÙA HOA NHẬT BẢN</h4> <!--CHổ này sẽ load tiêu đề tin tức tên-->
-			<p class="fa fa-calendar">&nbsp 24/3/2018</p> <!--Ngày đăng bài-->
+			<p class="fa fa-calendar">&nbsp; 24/3/2018</p> <!--Ngày đăng bài-->
 			<hr/>
 			<p><i>Nhật Bản ghi điểm trong lòng du khách bởi những mùa hoa xuân rực rỡ sắc màu. Mỗi loài mang một vẻ đẹp và nét cuốn hút riêng, đã tô điểm thêm sắc màu tươi mới của xứ Phù Tang. Hít hà hương hoa thơm ngát trong bầu không khí tuyệt diệu ấy hẳn sẽ là niềm ao ước trong mỗi chúng ta. Xuân này, hãy cùng gia đình đến thăm nước Nhật để hòa mình vào những thảm hoa tươi đẹp dưới đây nhé!</i></p> <!--Chi tiết tóm tắt-->
 		</div>

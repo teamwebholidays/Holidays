@@ -6,9 +6,31 @@ body{
   padding: 0px 30px 0px 30px;
 }
 
-.nav-main ul li a:hover{
-  color:red;
+
+.nav-hover{
+  position: relative;
 }
+
+.nav-hover:after{
+  content: '';
+  position: absolute;
+  width: 0; height: 3px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: red;
+  transition: width .2s ease;
+  -webkit-transition: width .2s ease;
+}
+ 
+.nav-hover:hover:after{
+  width: 100%;
+  left: 0;
+  background: red;
+}
+
+
+
 
 .dropbtn {
     background-color: #f8f9fa;
@@ -26,7 +48,7 @@ body{
     display: none;
     position: absolute;
     background-color: rgba(1,0,0,0.6);
-    min-width: 160px;
+    width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 
@@ -46,9 +68,6 @@ body{
     display: block;
 }
 
-.dropdown:hover .dropbtn {
-    color:#FF0000;
-}
 /*----------------------------END STYLE HEADER------------------------------ */
 
 /*---------------------------- STYLE DAT TOUR------------------------------ */

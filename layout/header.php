@@ -7,24 +7,25 @@
 
     <div class="collapse navbar-collapse nav-main" id="navbarSupportedContent" style="">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;DU LỊCH<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;DU LỊCH<span class="sr-only">(current)</span></a>
-        </li>
         <li class="nav-item">
           <div class="dropdown">
-            <button class="dropbtn"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;Dropdown</button>
+            <button class="dropbtn nav-hover"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;DU LỊCH</button>
             <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
+              <a href="#">TRONG NƯỚC</a>
+              <a href="#">NƯỚC NGOÀI</a>
+              <a href="#">DU LỊCH TỰ CHỌN</a>
             </div>
           </div>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="tin_tuc_du_lich.php"><i class="fa fa-newspaper-o" aria-hidden="true"></i>&nbsp;TIN TỨC<span class="sr-only">(current)</span></a>
+          <a class="nav-link nav-hover" href="#"><i class="fa fa-building"></i>&nbsp;KHÁCH SẠN<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link nav-hover" href="#"><i class="fa fa-truck" aria-hidden="true"></i>&nbsp;VẬN CHUYỂN<span class="sr-only">(current)</span></a>
+        </li>
+        
+        <li class="nav-item active">
+          <a class="nav-link nav-hover" href="tin_tuc_du_lich.php"><i class="fa fa-newspaper-o" aria-hidden="true"></i>&nbsp;TIN TỨC<span class="sr-only">(current)</span></a>
         </li>
       </ul>
     </div>
