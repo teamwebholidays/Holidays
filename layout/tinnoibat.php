@@ -1,4 +1,6 @@
-<div class="container-fluid" style="background-image: url('public/images/icon-back-logo/mountains.jpg'); background-repeat: no-repeat;">
+<div class="container-fluid" style="background-image: url('public/images/icon-back-logo/mountains.jpg'); background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; ">
 	<div class="container main_tinnoibat">
 		<div class="row">	
 			<p>TOUR DU LỊCH____________________</p>					
@@ -7,9 +9,9 @@
 		<div class="row">
 			<h2>NỔI BẬT</h2>
 		</div>
-		<div class="row" style="color:black; margin-top: 40px">
-			<div class="col-md-4" align="center">
-				<div class="card" style="width: 18rem;">
+		<div class="row" style="color:black; margin-top: 40px; padding-bottom: 30px">
+			<div class="col-md-4" align="center" style="margin-bottom: 20px">
+				<div class="card" style="width: 18rem">
 
 				 <div>
 					<div class="parent">
@@ -32,7 +34,7 @@
 			</div>
 
 
-			<div class="col-md-4" align="center">
+			<div class="col-md-4" align="center" style="margin-bottom: 20px">
 				<div class="card" style="width: 18rem;">
 
 				 <div>
@@ -57,7 +59,7 @@
 
 
 
-			<div class="col-md-4" align="center">
+			<div class="col-md-4" align="center" style="margin-bottom: 20px">
 				<div class="card" style="width: 18rem;">
 
 				 <div>
