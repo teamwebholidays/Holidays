@@ -21,12 +21,12 @@
 
 <div class="dattour">
 <div class="container">
-        <form name="frmDatTour" action="#" method="POST">
+        <form name="frmDatTour" action="tim_kiem_tour.php" method="POST">
             <h3>Tìm tour</h3>
             <div class="row form-group">
                 <div class="col-md-6 col-sm-4 col-6">
                     <label>Nơi khởi hành</label>
-                    <select class="form-control input-md" id="departureID" name="departureID">
+                    <select class="form-control input-md" id="slnoikhoihanh" name="slnoikhoihanh">
                          <option value="0">Nơi Khởi Hành</option>
                         <?php
                             while($row = mysqli_fetch_array($resultNKH))
@@ -119,7 +119,7 @@
                 <div class="col-md-6 col-sm-6 col-6">
                     <label>&nbsp;</label>
                     <div class="search-tour">
-                        <button type="submit" class="btn btn-default col-md-8 col-sm-8">
+                        <button type="submit" class="btn btn-default col-md-8 col-sm-8" name="btntimtour">
                             <i class="fa fa-search"></i> <span>Tìm kiếm</span>
                         </button>
                     </div>
