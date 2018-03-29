@@ -37,6 +37,11 @@
              <?php
                 include('layout/diemdenyeuthich.php');
               ?>
+
+
+              <?php
+                include('layout/camnhankhachhang.php');
+              ?>
         
             <!-- end content -->
 
