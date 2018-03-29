@@ -287,22 +287,29 @@ body{
 .text-yeu-thich{
     position: absolute;
     top: 70%;
-    left: 25%;
-    transform: translate(-50%, -50%);
+    left: 20%;
+    transform: translate(-30%, -50%);
     color:#FD0303;
     font-size:20px;
     font-weight: bold;
+    background-color:rgba(1,0,0,0.6);
 }
 
 .text-yeu-thich_02{
     position: absolute;
     top: 90%;
-    left: 40%;
+    left: 30%;
     transform: translate(-50%, -50%);
     color:white;
-     font-size:15px;
-     font-style: italic;
-     border-top: 1px solid white;
+    font-size:15px;
+    font-style: italic;
+    border-top: 1px solid white;
+    background-color:rgba(1,0,0,0.6);
+}
+
+.ndyeuthich{
+  margin-bottom: 10px;
+
 }
 /*----------------------------END STYLE DIEM DEN YEU THICH------------------------------ */
 
@@ -454,9 +461,15 @@ body{
   padding: 10px;
 }
 
+
 .btnchitiettour{
   border-left:1px solid #D6D0D0;
   text-align: center; 
+}
+
+.btnchitiettour a{
+  text-decoration: none;
+  color:white;
 }
 
 
