@@ -1,73 +1,77 @@
+<?php
+    include_once('database/DataProvider.php');
+
+    $sqlNKH = "SELECT distinct NoiKhoiHanh FROM tour";
+        
+    $resultNKH = DataProvider::ExcuteQuery($sqlNKH);
+
+    $sqlND = "SELECT distinct NoiDen FROM tour";
+        
+    $resultND = DataProvider::ExcuteQuery($sqlND);
+
+    $sqlLT = "SELECT TenLoai FROM loaitour";
+        
+    $resultLT = DataProvider::ExcuteQuery($sqlLT);
+
+    $sqlDT = "SELECT distinct DongTour FROM tour";
+        
+    $resultDT = DataProvider::ExcuteQuery($sqlDT);
+?>
+
+
 <div class="dattour">
 <div class="container">
-        <form name="frmDatTour" action="#" method="POST">
+        <form name="frmDatTour" action="tim_kiem_tour.php" method="POST">
             <h3>Tìm tour</h3>
             <div class="row form-group">
                 <div class="col-md-6 col-sm-4 col-6">
                     <label>Nơi khởi hành</label>
-                    <select class="form-control input-md" id="departureID" name="departureID">
-                        <option value="0">Nơi khởi hành</option>
-                        <option value="1"> Hồ Chí Minh</option>
-                        <option value="3">Hà Nội</option>
-                        <option value="4">Đà Nẵng</option>
-                        <option value="5">Cần Thơ</option>
-                        <option value="6">Hải Phòng</option>
-                        <option value="7">Bình Dương</option>
-                        <option value="8">Nha Trang</option>
-                        <option value="10">Huế</option>
-                        <option value="11">Quy Nhơn</option>
-                        <option value="12">Đồng Nai</option>
-                        <option value="13">Phú Quốc</option>
-                        <option value="14">Long Xuyên</option>
-                        <option value="15">Quảng Ngãi</option>
-                        <option value="16">Vũng Tàu</option>
-                        <option value="17">Quảng Ninh</option>
-                        <option value="18">Buôn Ma Thuột</option>
-                        <option value="19">Vinh</option>
-                        <option value="20">Cà Mau</option>
-                        <option value="22">Rạch Giá</option>
-                        <option value="24">Đà; Lạt</option>
-                        <option value="29">Thanh Hóa</option>
-                        <option value="30">Quảng Bình</option>
+                    <select class="form-control input-md" id="slnoikhoihanh" name="slnoikhoihanh">
+                         <option value="0">Nơi Khởi Hành</option>
+                        <?php
+                            while($row = mysqli_fetch_array($resultNKH))
+                            {
+                                $NoiKhoiHanh = $row['NoiKhoiHanh'];
+                        ?>
+                             <option><?php echo $NoiKhoiHanh?></option>
+
+                        <?php
+                            }
+                        ?>
                     </select> 
                 </div>
                 
                 <div class="col-md-6 col-sm-4 col-6">
-                    <label>Loại tour</label>
+                    <label>Nơi Đến</label>
                         <div>
                             <select class="form-control input-md" id="departureID" name="departureID">
-                                <option value="1">Tour trong nước</option>
-                                <option value="3">Tuor nước ngoài</option>
+                                 <option value="0">Nơi đến</option>
+                                <?php
+                                    while($row = mysqli_fetch_array($resultND))
+                                        {
+                                             $NoiDen = $row['NoiDen'];
+                                ?>
+                                    <option><?php echo $NoiDen?></option>
+                                <?php
+                                    }
+                                ?>
                             </select>
                         </div>
                 </div>
 
                 <div class="col-md-6 col-sm-4 col-6">
-                    <label>Nơi đến</label>
+                    <label>Loại tour</label>
                     <select class="form-control input-md" id="departureID" name="departureID">
-                        <option value="0">Nơi đến</option>
-                        <option value="1"> Hồ Chí Minh</option>
-                        <option value="3">Hà Nội</option>
-                        <option value="4">Đà Nẵng</option>
-                        <option value="5">Cần Thơ</option>
-                        <option value="6">Hải Phòng</option>
-                        <option value="7">Bình Dương</option>
-                        <option value="8">Nha Trang</option>
-                        <option value="10">Huế</option>
-                        <option value="11">Quy Nhơn</option>
-                        <option value="12">Đồng Nai</option>
-                        <option value="13">Phú Quốc</option>
-                        <option value="14">Long Xuyên</option>
-                        <option value="15">Quảng Ngãi</option>
-                        <option value="16">Vũng Tàu</option>
-                        <option value="17">Quảng Ninh</option>
-                        <option value="18">Buôn Ma Thuột</option>
-                        <option value="19">Vinh</option>
-                        <option value="20">Cà Mau</option>
-                        <option value="22">Rạch Giá</option>
-                        <option value="24">Đà; Lạt</option>
-                        <option value="29">Thanh Hóa</option>
-                        <option value="30">Quảng Bình</option>
+                        <option value="0">Loại tour</option>
+                                <?php
+                                    while($row = mysqli_fetch_array($resultLT))
+                                        {
+                                             $TenLoai = $row['TenLoai'];
+                                ?>
+                                    <option><?php echo $TenLoai?></option>
+                                <?php
+                                    }
+                                ?>
                     </select> 
                 </div>
                 <div class="col-md-6 col-sm-4 col-6 datepicker-form">
@@ -91,11 +95,16 @@
                 <div class="col-md-6 col-sm-4 col-6">
                     <label>Dòng tour</label>
                     <select class="form-control input-md" id="departureID" name="departureID">
-                        <option value="1"> Tất cả</option>
-                        <option value="2">Cao cấp</option>
-                        <option value="3">Tiêu chuẩn</option>
-                        <option value="4">Tiết kiệm</option>
-                        <option value="5">Giá tốt</option>
+                        <option value="0">Tất cả</option>
+                                <?php
+                                    while($row = mysqli_fetch_array($resultDT))
+                                        {
+                                             $DongTour = $row['DongTour'];
+                                ?>
+                                    <option><?php echo $DongTour?></option>
+                                <?php
+                                    }
+                                ?>
                     </select>
                 </div>
 
@@ -110,7 +119,7 @@
                 <div class="col-md-6 col-sm-6 col-6">
                     <label>&nbsp;</label>
                     <div class="search-tour">
-                        <button type="submit" class="btn btn-default col-md-8 col-sm-8">
+                        <button type="submit" class="btn btn-default col-md-8 col-sm-8" name="btntimtour">
                             <i class="fa fa-search"></i> <span>Tìm kiếm</span>
                         </button>
                     </div>

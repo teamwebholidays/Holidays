@@ -20,27 +20,9 @@
                 include('layout/dattour.php');
               ?>
             <!-- END DAT TOUR -->
-
-            <!-- TOUR NOI BAT -->
-              <?php
-                include('layout/tinnoibat.php');
-              ?>
-            <!-- END TOUR NOI BAT -->
             
-            <!-- TOUR MOI NHAT-->
-              <?php
-                include('layout/tourmoinhat.php');
-              ?>
-            <!-- END TOUR MOI NHAT-->
-        
-        
-             <?php
-                include('layout/diemdenyeuthich.php');
-              ?>
-
-
-              <?php
-                include('layout/camnhankhachhang.php');
+            <?php
+                include('layout/tourtheodiadiem.php');
               ?>
         
             <!-- end content -->
