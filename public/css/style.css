@@ -395,6 +395,7 @@ body{
 
 /*----------------------------STYLE CHI TIET TOUR------------------------------ */
 .maincttour{
+  margin-top: 100px;
   background-color:#EFEDED;
 }
 .maincttour div h3{

@@ -16,9 +16,6 @@
             <!-- content -->
 
             <!-- DAT TOUR -->
-              <?php
-                include('layout/dattour.php');
-              ?>
             <!-- END DAT TOUR -->
 
             <!-- TOUR NOI BAT -->
