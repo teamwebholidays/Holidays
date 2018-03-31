@@ -18,7 +18,7 @@
                     <p>1.000.000 VND</p>
                     <div class="thongtin-tourmoinhat">
                         <div class="row">
-                            <div class="col-md-8">04/06/2018 00:05 &nbsp;&nbsp;|&nbsp;&nbsp; 5 ngày</div>
+                            <div class="col-md-8">04/06/2018 00:05 &nbsp;&nbsp;|&nbsp;&nbsp;  5 ngày</div>
                             <div class="col-md-4">Còn <b>9</b> chỗ</div>
                         </div>
                     </div>
