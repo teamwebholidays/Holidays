@@ -1,3 +1,6 @@
+<?php
+   include_once('database/DataProvider.php');
+?>
 <header class="container-fluid">
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <a class="navbar-brand" href="index.php"><img src="public/images/icon-back-logo/logo-travel.png" title="logo-travel" width="70%"></a>

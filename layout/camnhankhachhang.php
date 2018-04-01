@@ -11,7 +11,7 @@
 
 		<div class="col-md-8">
 			<hr/>
-				<div id="demo" class="carousel slide" data-ride="carousel" style="text-align: center ">
+				<div id="demo" class="carousel slide" data-ride="carousel" data-interval="5000" style="text-align: center ">
 				  <div class="carousel-inner">
 				    <div class="carousel-item active">
 				      <p>29/03/2018 11:47:20</p>

@@ -17,7 +17,7 @@
 <div class="container" style="margin-top: 20px;">
 	<div class="row">
 		<div class="col-md-12">
-			<h4 class="text-danger">DU LỊCH <?php echo $NoiDen?></h4>
+			<h4 class="text-danger">DU LỊCH <span style="text-transform: uppercase;"><?php echo $NoiDen?></span></h4>
 		</div>
 	</div>
 	<?php
