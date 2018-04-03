@@ -19,7 +19,7 @@
 				            <a href="#"></a>
 				        </div>
 				    </div>
-					<div class="centered row">NGŨ HÀNH SƠN-HỘI AN-HUẾ-ĐỘNG THIÊN ĐƯỜNG-BÁN ĐẢO SƠN TRÀ</div>
+					<div class="centered row"><a href="https://www.youtube.com/" style="text-decoration: none;color:yellow">NGŨ HÀNH SƠN-HỘI AN-HUẾ-ĐỘNG THIÊN ĐƯỜNG-BÁN ĐẢO SƠN TRÀ</a></div>
 				 </div>
 
 				  <div class="card-body" style="background-color: rgb(172,214,60); color: white">
@@ -43,7 +43,7 @@
 				            <a href="#"></a>
 				        </div>
 				    </div>
-					<div class="centered row">CÙ LAO CHÀM</div>
+					<div class="centered row"><a href="https://www.youtube.com/" style="text-decoration: none;color:yellow">CÙ LAO CHÀM</a></div>
 				 </div>
 
 				  <div class="card-body" style="background-color: rgb(172,214,60); color: white;">
@@ -68,7 +68,7 @@
 				            <a href="#"></a>
 				        </div>
 				    </div>
-					<div class="centered row">NGŨ HÀNH SƠN-HỘI AN-HUẾ-ĐỘNG THIÊN ĐƯỜNG-BÁN ĐẢO SƠN TRÀ</div>
+					<div class="centered row"><a href="https://www.youtube.com/" style="text-decoration: none;color:yellow">NGŨ HÀNH SƠN-HỘI AN-HUẾ-ĐỘNG THIÊN ĐƯỜNG-BÁN ĐẢO SƠN TRÀ</a></div>
 				 </div>
 
 				  <div class="card-body" style="background-color: rgb(172,214,60); color: white">
