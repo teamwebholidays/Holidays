@@ -2,12 +2,12 @@
 	$noikhoihanh = '';
 	if(isset($_POST['btntimtour']))
 	{
-		$noikhoihanh = $_POST['slnoikhoihanh'];
+		$noikhoihanh = $_POST['slNoiKhoiHanh'];
 
 		$sql = "SELECT MaTour,TenTour,Gia, DongTour, ThoiGianTour, NgayKhoiHanh, Hinh FROM tour 
 			WHERE NoiKhoiHanh like '%".$noikhoihanh."%'";
-			$result = DataProvider::ExcuteQuery($sql);	
-			$row = mysqli_fetch_array($result);
+        $result = DataProvider::ExcuteQuery($sql);	
+        $row = mysqli_fetch_array($result);
 	}
 ?>
 
