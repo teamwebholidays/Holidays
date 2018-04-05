@@ -1,17 +1,12 @@
 <?php
 	$MaTour = $_GET['matour'];
 
-	$sql = "SELECT thongtintour.MaTour,TenTour,Gia, TenDongTour, ThoiGianTour, NgayKhoiHanh, URLHinh 
-			FROM thongtintour, dongtour,hinhanhtour
-			WHERE thongtintour.DongTour = dongtour.MaDongTour and thongtintour.MaTour = hinhanhtour.MaTour
-			and thongtintour.MaTour = '".$MaTour."' 
-			group by thongtintour.MaTour";
+	$sql = "SELECT MaTour,TenTour,Gia, DongTour, ThoiGianTour, NgayKhoiHanh, Hinh FROM tour 
+			WHERE MaTour = ".$MaTour;
 			$result = DataProvider::ExcuteQuery($sql);	
 
-	$sql2 = "SELECT tendiadiem 
-			FROM thongtintour, diadiem 
-			WHERE thongtintour.NoiDen = diadiem.stt	 
-			and MaTour = '".$MaTour."'";
+	$sql2 = "SELECT NoiDen FROM tour 
+			WHERE MaTour = ".$MaTour;
 	$result2 = DataProvider::ExcuteQuery($sql2);	
 	$row2 = mysqli_fetch_row($result2);
 
@@ -31,10 +26,10 @@
 			$MaTour = $row['MaTour'];
 			$TenTour = $row['TenTour'];
 			$Gia = $row['Gia'];
-			$DongTour = $row['TenDongTour'];
+			$DongTour = $row['DongTour'];
 			$ThoiGianTour = $row['ThoiGianTour'];
 			$NgayKhoiHanh = $row['NgayKhoiHanh'];
-			$Hinh = $row['URLHinh'];
+			$Hinh = $row['Hinh'];
 
 			$time=strtotime($NgayKhoiHanh);
 			$month=date("m",$time);

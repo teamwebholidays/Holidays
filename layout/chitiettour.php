@@ -1,18 +1,10 @@
 <?php
 	$MaTour = $_GET['matour'];
 
-	$sql = "SELECT thongtintour.MaTour,TenTour,Gia, TenDongTour, ThoiGianTour, NgayKhoiHanh,tendiadiem, LuotXem 
-            FROM thongtintour,dongtour,hinhanhtour,diadiem
-			WHERE thongtintour.DongTour = dongtour.MaDongTour and thongtintour.NoiDen = diadiem.stt
-            and thongtintour.MaTour = '".$MaTour."'
-            Group by thongtintour.MaTour";
+	$sql = "SELECT MaTour,TenTour,Gia, DongTour, ThoiGianTour, NgayKhoiHanh, Hinh,NoiKhoiHanh, LuotXem FROM tour 
+			WHERE MaTour = ".$MaTour;
 			$result = DataProvider::ExcuteQuery($sql);	
 			$row = mysqli_fetch_row($result);
-
-    $sqlhinh = "select URLHinh FROM hinhanhtour where MaTour ='".$MaTour."'";
-    $resulthinh = DataProvider::ExcuteQuery($sqlhinh);
-
-
 ?>
 
 <div class="container maincttour">
@@ -24,18 +16,7 @@
 	<div class="row">
 		<!-- div slideshow -->
 		<div class="col-md-6">
-			 <div class="w3-content w3-section" style="max-width:500px">
-            <?php
-                while($row2 = mysqli_fetch_array($resulthinh))
-                {
-                    $hinh = $row2['URLHinh'];
-                       
-            ?>
-              <img class="mySlides w3-animate-top" src="public/images/tour/<?php echo $hinh?>" style="width:100%">
-            <?php
-                }
-            ?>
-            </div>
+			<img src="public/images/tour/<?php echo $row[6]?>" alt="Los Angeles" width="100%" height="100%">
 		</div>
 		<!--end div slideshow -->
 
@@ -44,7 +25,7 @@
 			<div class="row"> 
 				<div class="col-md-4"><p><b>Mã tour:</b></p></div>
 				<div class="col-md-4"><p><?php echo $row[0]?></p></div>
-				<div class="col-md-4"><i class="fa fa-eye">&nbsp;<b><?php echo $row[7]?> &nbsp;</b></i></div>
+				<div class="col-md-4"><i class="fa fa-eye">&nbsp;<b><?php echo $row[8]?> &nbsp;</b></i></div>
 			</div>
 
 			<div class="row"> 
@@ -56,7 +37,7 @@
 
 			<div class="row"> 
 				<div class="col-md-4"><p><b>Nơi khởi hành:</b></p></div>
-				<div class="col-md-4"><p><?php echo $row[6]?></p></div>
+				<div class="col-md-4"><p><?php echo $row[7]?></p></div>
 				<div class="col-md-4"><p><b>Thời gian:</b><?php echo $row[4]?> ngày</p></div>
 			</div>
 
@@ -405,97 +386,58 @@
                     <span>0869275343</span>
                 </p>
             </div>
-
-<?php
-    $sqltheogia = "SELECT thongtintour.MaTour,TenTour, URLHinh
-                   FROM thongtintour,hinhanhtour
-                   WHERE thongtintour.MaTour = hinhanhtour.MaTour
-                   and Gia = ".$row[2]."
-                   and thongtintour.MaTour <> '".$MaTour."'
-                   GROUP BY thongtintour.MaTour
-                   limit 0,3";
-    $resulttheogia = DataProvider::ExcuteQuery($sqltheogia);
-
-    $sqltheongay = "SELECT thongtintour.MaTour,TenTour, URLHinh
-                   FROM thongtintour,hinhanhtour
-                   WHERE thongtintour.MaTour = hinhanhtour.MaTour
-                   and NgayKhoiHanh = '".$row[5]."'
-                    and thongtintour.MaTour <> '".$MaTour."'
-                   GROUP BY thongtintour.MaTour
-                   limit 0,3";
-    $resulttheongay = DataProvider::ExcuteQuery($sqltheongay);
-
-?>
             <div class="tourlienquan">
                 <div>CÁC TOUR LIÊN QUAN</div>
                 
 <!--                THEO GIÁ-->
                 <div class="tourlienquan-option">Theo giá</div>
-                <?php 
-                    while($row = mysqli_fetch_array($resulttheogia))
-                    {
-                        $MaTour = $row['MaTour'];
-                        $TenTour = $row['TenTour'];
-                        $URLHinh = $row['URLHinh'];
-                ?>
-                    <div class="row">
-                        <div class="tourlienquan-content col-md-12">
-                            <a href="chi_tiet_tour.php?matour=<?php echo $MaTour ?>"><img src="public/images/tour/<?php echo $URLHinh?>" class="img-fluid" alt="<?php echo $TenTour?>"/></a>
-                            <a href="chi_tiet_tour.php?matour=<?php echo $MaTour ?>"><p><?php echo $TenTour?></p></a>
-                        </div>
+                <div class="row">
+                    <div class="tourlienquan-content col-md-12">
+                        <a href="https://youtube.com"><img src="https://travel.com.vn/Images/destination/tf_180130045104_841481.jpg" class="img-fluid" alt="Nha Trang - Hòn Tằm (Xe. Khách Sạn 4*. Tour tiết kiệm)"/></a>
+                        <a href="https://fb.com"><p>Nha Trang - Hòn Tằm (Xe. Khách Sạn 4*. Tour tiết kiệm)</p></a>
                     </div>
-                <?php
-                    }
-                ?>
+                </div>
+                <div class="row">
+                    <div class="tourlienquan-content col-md-12">
+                        <a href="https://youtube.com"><img src="https://travel.com.vn/Images/destination/tf_180130045104_841481.jpg" class="img-fluid" alt="Nha Trang - Hòn Tằm (Xe. Khách Sạn 4*. Tour tiết kiệm)"/></a>
+                        <a href="https://fb.com"><p>Nha Trang - Hòn Tằm (Xe. Khách Sạn 4*. Tour tiết kiệm)</p></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="tourlienquan-content col-md-12">
+                        <a href="https://youtube.com"><img src="https://travel.com.vn/Images/destination/tf_180130045104_841481.jpg" class="img-fluid" alt="Nha Trang - Hòn Tằm (Xe. Khách Sạn 4*. Tour tiết kiệm)"/></a>
+                        <a href="https://fb.com"><p>Nha Trang - Hòn Tằm (Xe. Khách Sạn 4*. Tour tiết kiệm)</p></a>
+                    </div>
+                </div>
 <!--                END THEO GIÁ-->
                 
 <!--                THEO NGÀY KHỞI HÀNH-->
-                <div class="tourlienquan-option">Theo ngày khởi hành</div>
-                 <?php 
-                    while($row = mysqli_fetch_array($resulttheongay))
-                    {
-                        $MaTour = $row['MaTour'];
-                        $TenTour = $row['TenTour'];
-                        $URLHinh = $row['URLHinh'];
-                ?>
-                    <div class="row">
-                        <div class="tourlienquan-content col-md-12">
-                            <a href="https://youtube.com"><img src="public/images/tour/<?php echo $URLHinh?>" class="img-fluid" alt="<?php echo $TenTour?>"/></a>
-                            <a href="https://fb.com"><p><?php echo $TenTour?></p></a>
-                        </div>
+                <div class="tourlienquan-option">Ngày khởi hành</div>
+                <div class="row">
+                    <div class="tourlienquan-content col-md-12">
+                        <a href="https://youtube.com"><img src="https://travel.com.vn/Images/destination/tf_180131012832_581020.jpg" class="img-fluid" alt="Nha Trang - Hòn Tằm (Xe. Khách Sạn 4*. Tour tiết kiệm)"/></a>
+                        <a href="https://fb.com"><p>Nha Trang - Hòn Tằm (Xe. Khách Sạn 4*. Tour tiết kiệm)</p></a>
                     </div>
-                 <?php
-                    }
-                ?>
+                </div>
+                <div class="row">
+                    <div class="tourlienquan-content col-md-12">
+                        <a href="https://youtube.com"><img src="https://travel.com.vn/Images/destination/tf_180131012832_581020.jpg" class="img-fluid" alt="Nha Trang - Hòn Tằm (Xe. Khách Sạn 4*. Tour tiết kiệm)"/></a>
+                        <a href="https://fb.com"><p>Nha Trang - Hòn Tằm (Xe. Khách Sạn 4*. Tour tiết kiệm)</p></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="tourlienquan-content col-md-12">
+                        <a href="https://youtube.com"><img src="https://travel.com.vn/Images/destination/tf_180131012832_581020.jpg" class="img-fluid" alt="Nha Trang - Hòn Tằm (Xe. Khách Sạn 4*. Tour tiết kiệm)"/></a>
+                        <a href="https://fb.com"><p>Nha Trang - Hòn Tằm (Xe. Khách Sạn 4*. Tour tiết kiệm)</p></a>
+                    </div>
+                </div>
 <!--                END THEO NGÀY KHỞI HÀNH-->
             </div>
         </div>
     </div>
 </div>
 <?php
-	$sqlupdate = "update thongtintour set LuotXem = LuotXem + 1 
-			WHERE MaTour = '".$_GET['matour']."'";
+	$sqlupdate = "update tour set LuotXem = LuotXem + 1 
+			WHERE MaTour = ".$MaTour;
 			DataProvider::ExcuteQuery($sqlupdate);	
-
-    echo $sqlupdate;
 ?>
-
-
-<!-- script slide show-->
-<script>
-    var myIndex = 0;
-    carousel();
-
-    function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";  
-        }
-        myIndex++;
-        if (myIndex > x.length) {myIndex = 1}    
-        x[myIndex-1].style.display = "block";  
-        setTimeout(carousel, 3500);    
-    }
-</script>
-<!--end script slide show-->

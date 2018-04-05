@@ -1,11 +1,5 @@
 <?php
-	$sql = "SELECT thongtintour.MaTour,tendiadiem,LuotXem,URLHinh 
-			FROM thongtintour,hinhanhtour,diadiem
-			WHERE thongtintour.MaTour = hinhanhtour.MaTour 
-				 and thongtintour.NoiDen = diadiem.stt
-			GROUP by thongtintour.MaTour 
-			order by LuotXem Desc 
-			limit 0,8";
+	$sql = "SELECT MaTour,NoiDen,LuotXem,Hinh FROM tour order by LuotXem Desc limit 0,8";
 			$result = DataProvider::ExcuteQuery($sql);	
 ?>
 
@@ -21,9 +15,9 @@
 		while($row = mysqli_fetch_array($result))
 		{
 			$MaTour = $row['MaTour'];
-			$NoiDen = $row['tendiadiem'];
+			$NoiDen = $row['NoiDen'];
 			$LuotXem = $row['LuotXem'];
-			$Hinh = $row['URLHinh'];
+			$Hinh = $row['Hinh'];
 	?>
 		<div class="col-md-3 ndyeuthich">
 			<a href="tour_thuoc_dia_diem.php?matour=<?php echo $MaTour ?>"><img src="public/images/tour/<?php echo $Hinh?>" alt="Avatar" class="image" width="100%" height="100%"></a>
