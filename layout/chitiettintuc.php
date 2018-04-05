@@ -24,14 +24,14 @@
 	<div class="row">
 		<div class="col-md-6">
 			<p><b>Liên hệ:</b><br/>
-			Công ty Du lịch <span class="text-danger">Vietravel</span>
-			190 Pasteur, P.6, Q.3, TP.HCM<br/>
+			Công ty Du lịch <span class="text-danger">4 mùa</span>
+			227 Nguyễn Văn Cừ, P.6, Q.5, TP.HCM<br/>
 			ĐT: (028) 3822 8898<br/>
 			Hotline: 1900 1839<br/>
-			Fanpage: <a href="www.facebook.com/vietravel"><span class="text-danger">www.facebook.com/vietravel</span></a><br/>
-			Website: <a href="www.travel.com.vn"><span class="text-danger">www.travel.com.vn</span></a><br/>
-			Hệ thống trung tâm, chi nhánh Vietravel trên toàn quốc.<br/>
-			Địa chỉ tham khảo tại đây:<a href="www.travel.com.vn"><span class="text-danger"> https://goo.gl/vzSCqW</span></a>
+			Fanpage: <a href="https://www.youtube.com/"><span class="text-danger">www.facebook.com/4muatravlel</span></a><br/>
+			Website: <a href="https://www.youtube.com/"><span class="text-danger">www.4muatravel.com.vn</span></a><br/>
+			Hệ thống trung tâm, chi nhánh 4 mùa travel trên toàn quốc.<br/>
+			Địa chỉ tham khảo tại đây:<a href="https://www.youtube.com/"><span class="text-danger">https://goo.gl/vzSCqW</span></a>
 			</p>
 		</div>
 	</div>
@@ -43,7 +43,7 @@
 		</div>
 		<div class="col-md-6"><!-- chổ này sẽ load lên 5 tin mới nhất lên nhé-->
 			<ul>
-				<li><a href="">VITM 2018 - HƠN 5.000 TOUR DU LỊCH HÈ ƯU ĐÃI GIẢM TỚI 35% TẠI VIETRAVE</a></li>
+				<li><a href="">VITM 2018 - HƠN 5.000 TOUR DU LỊCH HÈ ƯU ĐÃI GIẢM TỚI 35% TẠI 4 MÙA</a></li>
 				<li><a href="">"BÍ KÍP VÀNG" CHỌN TOUR NGÀY LỄ</a></li>
 				<li><a href="">PHÁO HOA ĐÀ NẴNG 2018 – “HUYỀN THOẠI NHỮNG CÂY CẦU”</a></li>
 				<li><a href="">CHƯƠNG TRÌNH KHUYẾN MÃI “THẺ TRONG TAY – CHẠM NGAY NHẬT BẢN”</a></li>
@@ -53,7 +53,7 @@
 
 		<div class="col-md-6"><!-- chổ này sẽ load lên 5 nhiều lượt xem nhất-->
 			<ul>
-				<li><a href="">VITM 2018 - HƠN 5.000 TOUR DU LỊCH HÈ ƯU ĐÃI GIẢM TỚI 35% TẠI VIETRAVE</a></li>
+				<li><a href="">VITM 2018 - HƠN 5.000 TOUR DU LỊCH HÈ ƯU ĐÃI GIẢM TỚI 35% TẠI 4 MÙA</a></li>
 				<li><a href="">"BÍ KÍP VÀNG" CHỌN TOUR NGÀY LỄ</a></li>
 				<li><a href="">PHÁO HOA ĐÀ NẴNG 2018 – “HUYỀN THOẠI NHỮNG CÂY CẦU”</a></li>
 				<li><a href="">CHƯƠNG TRÌNH KHUYẾN MÃI “THẺ TRONG TAY – CHẠM NGAY NHẬT BẢN”</a></li>
