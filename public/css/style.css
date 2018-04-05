@@ -99,7 +99,7 @@ body{
 .dattour form > div{
     border-top: 1px dashed rgba(255,255,255,.2);
 }
-.dattour form > div div{
+.dattour form > div > div{
     margin-top: 5px;
 }
 .dattour .search-tour button{
