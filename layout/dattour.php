@@ -78,7 +78,7 @@
                 </div>
                 <div class="col-md-6 col-sm-4 col-6 datepicker-form">
                     <label>Ngày khởi hành</label>
-                    <input type="text" placeholder="<?php echo date("d-m-Y") ?>" id="datepicker" class="form-control">
+                    <input type="text" placeholder="<?php echo date("d-m-Y") ?>" id="datepicker" class="form-control" name="ngaykhoihanh">
                     <i class="fa fa-calendar"></i>
                 </div>
 
@@ -114,7 +114,7 @@
                 <div class="col-md-6 col-sm-6 col-6">
                     <label>Tình trạng</label>
                     <select class="form-control input-md" id="slTinhTrang" name="slTinhTrang">
-                        <option value="0"> Tất cả</option>
+                        <option value="0">Tất cả</option>
                         <option value="1">Còn chỗ</option>
                         <option value="2">Hết chỗ</option>
                     </select>
