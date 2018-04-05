@@ -316,7 +316,7 @@ body{
 .text-yeu-thich{
     position: absolute;
     top: 70%;
-    left: 20%;
+    left: 23%;
     transform: translate(-30%, -50%);
     color:#FD0303;
     font-size:20px;
@@ -326,8 +326,8 @@ body{
 
 .text-yeu-thich_02{
     position: absolute;
-    top: 90%;
-    left: 30%;
+    top: 88%;
+    left: 32%;
     transform: translate(-50%, -50%);
     color:white;
     font-size:15px;

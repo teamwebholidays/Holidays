@@ -16,7 +16,9 @@
     <link href="public/css/style.css" rel="stylesheet">
 
      <link href="public/css/font-awesome.min.css" rel="stylesheet">
-    
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
     <script type="text/javascript" src="public/js/jquery-3.2.1.min.js"></script>
 	
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
