@@ -11,7 +11,7 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" type="text/css" href="public/font/font-awesome/css/font-awesome.min.css" />
-
+    
     <!-- Custom styles for this template -->
     <link href="public/css/style.css" rel="stylesheet">
 

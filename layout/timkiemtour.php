@@ -45,8 +45,6 @@
 			$sqlgia = 'Gia > 10000';
 		}
 
-		echo $sqlgia;
-
 		$sql = "SELECT thongtintour.`MaTour`,`TenTour`, Gia, TenDongTour, ThoiGianTour, NgayKhoiHanh, URLHinh
 				FROM `thongtintour`, hinhanhtour, dongtour,diadiem
 				WHERE hinhanhtour.MaTour = thongtintour.MaTour 
@@ -60,7 +58,6 @@
 					and ".$sqlgia."
 					limit 0,2";
         $result = DataProvider::ExcuteQuery($sql);	
-        $row = mysqli_fetch_array($result);
 	}
 ?>
 
