@@ -36,12 +36,13 @@
 
     			<p class="tittle-footer">THÔNG TIN</p>
     			<ul>
-    				<li><a href="">Hà Nội</a></li>
-    				<li><a href="">Hà Nội</a></li>
-    				<li><a href="">Hà Nội</a></li>
-    				<li><a href="">Hà Nội</a></li>
-    				<li><a href="">Hà Nội</a></li>
-    				<li><a href="">Hà Nội</a></li>
+    				<li><a href="#">Giới thiệu</a></li>
+    				<li><a href="#">Tin tức</a></li>
+    				<li><a href="#">Tạp chí du lịch</a></li>
+    				<li><a href="#">Cẩm nang du lịch</a></li>
+    				<li><a href="#">Kinh nghiệm du lịch</a></li>
+    				<li><a href="#">Video</a></li>
+					<li><a href="#">Liên hệ</a></li>
 
     			</ul>
     		</div>
@@ -49,16 +50,15 @@
     		<div class="col-md-3 nd-footer">
     			<p class="tittle-footer">LIÊN HỆ</p>
     			<ul>
-    				<li><a href="">123 Đường Nguyễn Văn Cừ</a></li>
-    				<li><a href="">Điện thoại: 0909 123 456</a></li>
-    				<li><a href="">Fax: 090313 123 13 </a></li>
-    				<li><a href="">Email: info@abc.com</a></li>
+    				<li>123 Đường Nguyễn Văn Cừ</li>
+    				<li>Điện thoại: 0909 123 456</li>
+    				<li>Fax: 090313 123 13 </a></li>
+    				<li>Email: info@abc.com</li>
     			</ul>
 
 
     			<p class="tittle-footer">CHẤP NHẬN THANH TOÁN</p>
 				<div class="row-img-footer">
-					<img src="public/images/icon-back-logo/123pay.png" width="20%" height="20%" class="img-footer">
 					<img src="public/images/icon-back-logo/JCB.jpg" width="20%" height="20%" class="img-footer">
 					<img src="public/images/icon-back-logo/visa.jpg" width="20%" height="20%" class="img-footer">
 					<img src="public/images/icon-back-logo/mastercard.jpg" width="20%" height="20%" class="img-footer">
@@ -76,10 +76,10 @@
 				</div>
 
 
-				<p class="tittle-footer">NEW SELLTER</p>
+				<p class="tittle-footer">ĐĂNG KÝ NHẬN TOUR MỚI</p>
 				<div class="form-group form-footer">    
 			      <input type="text" class="form-control" id="usr" placeholder="Email của bạn...">
-			      <button class="btn">Gửi</button>
+			      <button class="btn">GỬI</button>
 			    </div>
 
 				<div style="margin-top: 30px">&nbsp;</div>
