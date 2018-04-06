@@ -4,6 +4,6 @@
          window.jQuery || document.write('<script src="Public/Bootstrap/assets/js/vendor/jquery-slim.min.js"><\/script>')
     </script>
 -->
-    <script src="Public/Bootstrap//assets/js/vendor/popper.min.js"></script>
-    <script src="Public/Bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="Public/Bootstrap/assets/js/vendor/holder.min.js"></script>
+    <script src="public/Bootstrap/assets/js/vendor/popper.min.js"></script>
+    <script src="public/Bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="public/Bootstrap/assets/js/vendor/holder.min.js"></script>

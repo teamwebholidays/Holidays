@@ -15,7 +15,6 @@
     <!-- Custom styles for this template -->
     <link href="public/css/style.css" rel="stylesheet">
 
-     <link href="public/css/font-awesome.min.css" rel="stylesheet">
     
     <script type="text/javascript" src="public/js/jquery-3.2.1.min.js"></script>
 	

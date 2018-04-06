@@ -27,10 +27,22 @@
                 <div class="col-md-6 col-sm-4 col-6">
                     <label>Nơi khởi hành</label>
                     <select class="form-control input-md" id="slNoiKhoiHanh" name="slNoiKhoiHanh">
-                         <option value="0">Nơi Khởi Hành</option>
+                        <option value="0">Nơi Khởi Hành</option>
+                        
+                        
+                        
+                        <?php
+                            $row = mysqli_fetch_array($resultNKH);
+                            $STT = $row['stt'];
+                            $NoiKhoiHanh = $row['tendiadiem'];
+                        ?>
+                         <option value="<?php echo $STT?>"><?php echo $NoiKhoiHanh?></option>
+                        
+                        
                         <?php
                             while($row = mysqli_fetch_array($resultNKH))
                             {
+
                                 $STT = $row['stt'];
                                 $NoiKhoiHanh = $row['tendiadiem'];
                                 
