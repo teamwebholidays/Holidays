@@ -393,6 +393,17 @@ body{
 .form-footer button:hover{
   background-color: #7D7B7B;
 }
+
+.footer-bottom{
+  margin-top: 70px;
+}
+.footer-bottom div{
+  text-align: center;
+}
+
+.footer-bottom div p{
+  color:white; font-weight: bold;
+}
 /*----------------------------END STYLE FOOTER------------------------------ */
 
 /*----------------------------STYLE CHI TIET TOUR------------------------------ */

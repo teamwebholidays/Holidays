@@ -6,7 +6,7 @@
 	</div>
 	<div class="row">
 		<div class="col-md-2">
-			<img src="public/images/icon-back-logo/mai-01.png" width="100%">
+			<!--<img src="public/images/icon-back-logo/mai-01.png" width="100%">-->
 		</div>
 
 		<div class="col-md-8">
@@ -43,7 +43,7 @@
 		</div>
 
 		<div class="col-md-2">
-			<img src="public/images/icon-back-logo/mai-02.png" width="100%">
+			<!--<img src="public/images/icon-back-logo/mai-02.png" width="100%">-->
 		</div>
 	</div>
 </div>
