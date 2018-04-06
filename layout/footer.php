@@ -86,9 +86,9 @@
     		</div>
     	</div>
     </div>
-    <div class="row" style="margin-top: 50px">
-        <div class="col-md-12" style="text-align: center">
-            <p class="text-danger">Bản Quyền Thuộc về ABC @ 2018 - Số GPKD 12345678</p>
+    <div class="row footer-bottom">
+        <div class="col-md-12">
+            <p>Bản Quyền Thuộc về ABC @ 2018 - Số GPKD 12345678</p>
         </div>
     </div>
  </footer>
