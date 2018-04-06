@@ -17,24 +17,24 @@
 				      <p>29/03/2018 11:47:20</p>
 				      <h6 class="text-danger">CẢM NHẬN CỦA KHÁCH HÀNG TRANG HUỲNH NGUYÊN PHƯƠNG, TOUR ĐÀ NẴNG- HỘI AN - HUẾ THÁNG 03 NĂM 2018</h6>
 				      <p>
-						Dear Công ty Vietravel,
-						Kết thúc chuyến tour 4 ngày 3 đêm tại Đà Nẵng - Hội An - Huế, hai chị em tôi vẫn còn phấn khích vì có một chuyến đi thật thú vị và nhiều ấn tượng đẹp mà Công ty Vietravel đã mang lại cho chúng tôi.
+						Dear Công ty VINATRIP,
+						Kết thúc chuyến tour 4 ngày 3 đêm tại Đà Nẵng - Hội An - Huế, hai chị em tôi vẫn còn phấn khích vì có một chuyến đi thật thú vị và nhiều ấn tượng đẹp mà Công ty VINATRIP đã mang lại cho chúng tôi.
 				      </p>
 				    </div>
 				    <div class="carousel-item">
 				       <p>29/03/2018 11:47:20</p>
 				      <h6 class="text-danger">CẢM NHẬN CỦA KHÁCH HÀNG TRANG HUỲNH NGUYÊN PHƯƠNG, TOUR ĐÀ NẴNG- HỘI AN - HUẾ THÁNG 03 NĂM 2018</h6>
 				      <p>
-						Dear Công ty Vietravel,
-						Kết thúc chuyến tour 4 ngày 3 đêm tại Đà Nẵng - Hội An - Huế, hai chị em tôi vẫn còn phấn khích vì có một chuyến đi thật thú vị và nhiều ấn tượng đẹp mà Công ty Vietravel đã mang lại cho chúng tôi.
+						Dear Công ty VINATRIP,
+						Kết thúc chuyến tour 4 ngày 3 đêm tại Đà Nẵng - Hội An - Huế, hai chị em tôi vẫn còn phấn khích vì có một chuyến đi thật thú vị và nhiều ấn tượng đẹp mà Công ty VINATRIP đã mang lại cho chúng tôi.
 				      </p>
 				    </div>
 				    <div class="carousel-item">
 				       <p>29/03/2018 11:47:20</p>
 				      <h6 class="text-danger">CẢM NHẬN CỦA KHÁCH HÀNG TRANG HUỲNH NGUYÊN PHƯƠNG, TOUR ĐÀ NẴNG- HỘI AN - HUẾ THÁNG 03 NĂM 2018</h6>
 				      <p>
-						Dear Công ty Vietravel,
-						Kết thúc chuyến tour 4 ngày 3 đêm tại Đà Nẵng - Hội An - Huế, hai chị em tôi vẫn còn phấn khích vì có một chuyến đi thật thú vị và nhiều ấn tượng đẹp mà Công ty Vietravel đã mang lại cho chúng tôi.
+						Dear Công ty VINATRIP,
+						Kết thúc chuyến tour 4 ngày 3 đêm tại Đà Nẵng - Hội An - Huế, hai chị em tôi vẫn còn phấn khích vì có một chuyến đi thật thú vị và nhiều ấn tượng đẹp mà Công ty VINATRIP đã mang lại cho chúng tôi.
 				      </p>
 				    </div>
 				  </div>

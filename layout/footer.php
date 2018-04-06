@@ -70,7 +70,7 @@
     			<p class="tittle-footer">KẾT NỐI VỚI CHÚNG TÔI</p>
     			<div class="row-img-footer">
 					<a href="https://www.youtube.com/"><img src="public/images/icon-back-logo/fb-icon.png" width="20%" height="20%" class="img-footer"></a>
-					<a href="https://www.youtube.com/"><img src="public/images/icon-back-logo/logo_g+.png" width="20%" height="20%" class="img-footer"></a>
+					<a href="https://www.youtube.com/"><img src="public/images/icon-back-logo/Logo_g+.png" width="20%" height="20%" class="img-footer"></a>
 					<a href="https://www.youtube.com/"><img src="public/images/icon-back-logo/logo-youtube.png" width="20%" height="20%" class="img-footer"></a>
 					<a href="https://www.youtube.com/"><img src="public/images/icon-back-logo/logo-twitter.png" width="20%" height="20%" class="img-footer"></a>
 				</div>

@@ -24,14 +24,14 @@
 	<div class="row">
 		<div class="col-md-6">
 			<p><b>Liên hệ:</b><br/>
-			Công ty Du lịch <span class="text-danger">Vietravel</span>
+			Công ty Du lịch <span class="text-danger">VINATRIP</span>
 			190 Pasteur, P.6, Q.3, TP.HCM<br/>
 			ĐT: (028) 3822 8898<br/>
 			Hotline: 1900 1839<br/>
-			Fanpage: <a href="www.facebook.com/vietravel"><span class="text-danger">www.facebook.com/vietravel</span></a><br/>
-			Website: <a href="www.travel.com.vn"><span class="text-danger">www.travel.com.vn</span></a><br/>
-			Hệ thống trung tâm, chi nhánh Vietravel trên toàn quốc.<br/>
-			Địa chỉ tham khảo tại đây:<a href="www.travel.com.vn"><span class="text-danger"> https://goo.gl/vzSCqW</span></a>
+			Fanpage: <a href="https://www.youtube.com/"><span class="text-danger">www.facebook.com/VINATRIP</span></a><br/>
+			Website: <a href="https://www.youtube.com/"><span class="text-danger">www.VINATRIP.vn</span></a><br/>
+			Hệ thống trung tâm, chi nhánh VINATRIP trên toàn quốc.<br/>
+			Địa chỉ tham khảo tại đây:<a href="https://www.youtube.com/"><span class="text-danger">https://goo.gl/vzSCqW</span></a>
 			</p>
 		</div>
 	</div>
@@ -43,21 +43,21 @@
 		</div>
 		<div class="col-md-6"><!-- chổ này sẽ load lên 5 tin mới nhất lên nhé-->
 			<ul>
-				<li><a href="">VITM 2018 - HƠN 5.000 TOUR DU LỊCH HÈ ƯU ĐÃI GIẢM TỚI 35% TẠI VIETRAVE</a></li>
-				<li><a href="">"BÍ KÍP VÀNG" CHỌN TOUR NGÀY LỄ</a></li>
-				<li><a href="">PHÁO HOA ĐÀ NẴNG 2018 – “HUYỀN THOẠI NHỮNG CÂY CẦU”</a></li>
-				<li><a href="">CHƯƠNG TRÌNH KHUYẾN MÃI “THẺ TRONG TAY – CHẠM NGAY NHẬT BẢN”</a></li>
-				<li><a href="">WORLD CUP 2018 & HÀNH TRÌNH ĐI TÌM TẤM VÉ CHÍNH THỨC</a></li>
+				<li><a href="https://www.youtube.com/">VITM 2018 - HƠN 5.000 TOUR DU LỊCH HÈ ƯU ĐÃI GIẢM TỚI 35% TẠI VINATRIP</a></li>
+				<li><a href="https://www.youtube.com/">"BÍ KÍP VÀNG" CHỌN TOUR NGÀY LỄ</a></li>
+				<li><a href="https://www.youtube.com/">PHÁO HOA ĐÀ NẴNG 2018 – “HUYỀN THOẠI NHỮNG CÂY CẦU”</a></li>
+				<li><a href="https://www.youtube.com/">CHƯƠNG TRÌNH KHUYẾN MÃI “THẺ TRONG TAY – CHẠM NGAY NHẬT BẢN”</a></li>
+				<li><a href="https://www.youtube.com/">WORLD CUP 2018 & HÀNH TRÌNH ĐI TÌM TẤM VÉ CHÍNH THỨC</a></li>
 			</ul>
 		</div>
 
 		<div class="col-md-6"><!-- chổ này sẽ load lên 5 nhiều lượt xem nhất-->
 			<ul>
-				<li><a href="">VITM 2018 - HƠN 5.000 TOUR DU LỊCH HÈ ƯU ĐÃI GIẢM TỚI 35% TẠI VIETRAVE</a></li>
-				<li><a href="">"BÍ KÍP VÀNG" CHỌN TOUR NGÀY LỄ</a></li>
-				<li><a href="">PHÁO HOA ĐÀ NẴNG 2018 – “HUYỀN THOẠI NHỮNG CÂY CẦU”</a></li>
-				<li><a href="">CHƯƠNG TRÌNH KHUYẾN MÃI “THẺ TRONG TAY – CHẠM NGAY NHẬT BẢN”</a></li>
-				<li><a href="">WORLD CUP 2018 & HÀNH TRÌNH ĐI TÌM TẤM VÉ CHÍNH THỨC</a></li>
+				<li><a href="https://www.youtube.com/">VITM 2018 - HƠN 5.000 TOUR DU LỊCH HÈ ƯU ĐÃI GIẢM TỚI 35% TẠI VINATRIP</a></li>
+				<li><a href="https://www.youtube.com/">"BÍ KÍP VÀNG" CHỌN TOUR NGÀY LỄ</a></li>
+				<li><a href="https://www.youtube.com/">PHÁO HOA ĐÀ NẴNG 2018 – “HUYỀN THOẠI NHỮNG CÂY CẦU”</a></li>
+				<li><a href="https://www.youtube.com/">CHƯƠNG TRÌNH KHUYẾN MÃI “THẺ TRONG TAY – CHẠM NGAY NHẬT BẢN”</a></li>
+				<li><a href="https://www.youtube.com/">WORLD CUP 2018 & HÀNH TRÌNH ĐI TÌM TẤM VÉ CHÍNH THỨC</a></li>
 			</ul>
 		</div>
 	</div>
