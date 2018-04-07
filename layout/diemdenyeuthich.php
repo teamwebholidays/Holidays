@@ -28,7 +28,7 @@
 	?>
 		<div class="col-md-3 ndyeuthich">
 			<div class="thumbnail text-center">
-				<a href="danh-sach-tour/<?php echo $MaNoiDen ?>"><img src="public/images/tour/<?php echo $Hinh?>" alt="Avatar" class="image" width="100%" height="200em"></a>
+				<a href="<?php echo $path?>danh-sach-tour/<?php echo $MaNoiDen?>.html"><img src="public/images/tour/<?php echo $Hinh?>" alt="Avatar" class="image" width="100%" height="200em"></a>
 				  <div class="caption">
 				  	<h4><?php echo $NoiDen?></h4>
 				  	<p>Đã có <?php echo $LuotXem?> lượt xem<p>

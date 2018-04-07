@@ -14,7 +14,7 @@
 
 			<div class="row">
 				<div class="col-md-3">
-					<img src="public/images/tour/<?php echo $Hinh?>" title="an-do-nepal" width="100%">
+					<img src="<?php echo $path?>public/images/tour/<?php echo $Hinh?>" title="an-do-nepal" width="100%">
 				</div>
 
 				<div class="col-md-9" style="margin-top: 20px;">
@@ -33,7 +33,7 @@
 							<h6 class="text-danger"><?php echo number_format($Gia)?> VNĐ</h6>
 							<form>
 								<button type="submit" name="chitiet" class="btn btn-danger">
-									<a href="chi_tiet_tour.php?matour=<?php echo $MaTour ?>">CHI TIẾT</a></button>
+									<a href="<?php echo $path?>chi_tiet_tour.php?matour=<?php echo $MaTour ?>">CHI TIẾT</a></button>
 							</form>
 						</div>
 					</div>

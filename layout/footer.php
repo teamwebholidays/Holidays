@@ -59,20 +59,20 @@
 
     			<p class="tittle-footer">CHẤP NHẬN THANH TOÁN</p>
 				<div class="row-img-footer">
-					<img src="public/images/icon-back-logo/JCB.jpg" width="20%" height="20%" class="img-footer">
-					<img src="public/images/icon-back-logo/visa.jpg" width="20%" height="20%" class="img-footer">
-					<img src="public/images/icon-back-logo/mastercard.jpg" width="20%" height="20%" class="img-footer">
-					<img src="public/images/icon-back-logo/securecode_leadin.jpg" width="20%" height="20%" class="img-footer">
+					<img src="<?php echo $path?>public/images/icon-back-logo/JCB.jpg" width="20%" height="20%" class="img-footer">
+					<img src="<?php echo $path?>public/images/icon-back-logo/visa.jpg" width="20%" height="20%" class="img-footer">
+					<img src="<?php echo $path?>public/images/icon-back-logo/mastercard.jpg" width="20%" height="20%" class="img-footer">
+					<img src="<?php echo $path?>public/images/icon-back-logo/securecode_leadin.jpg" width="20%" height="20%" class="img-footer">
 				</div>
     		</div>
 
     		<div class="col-md-3">
     			<p class="tittle-footer">KẾT NỐI VỚI CHÚNG TÔI</p>
     			<div class="row-img-footer">
-					<a href="https://www.youtube.com/"><img src="public/images/icon-back-logo/fb-icon.png" width="20%" height="20%" class="img-footer"></a>
-					<a href="https://www.youtube.com/"><img src="public/images/icon-back-logo/Logo_g+.png" width="20%" height="20%" class="img-footer"></a>
-					<a href="https://www.youtube.com/"><img src="public/images/icon-back-logo/logo-youtube.png" width="20%" height="20%" class="img-footer"></a>
-					<a href="https://www.youtube.com/"><img src="public/images/icon-back-logo/logo-twitter.png" width="20%" height="20%" class="img-footer"></a>
+					<a href="https://www.youtube.com/"><img src="<?php echo $path?>public/images/icon-back-logo/fb-icon.png" width="20%" height="20%" class="img-footer"></a>
+					<a href="https://www.youtube.com/"><img src="<?php echo $path?>public/images/icon-back-logo/Logo_g+.png" width="20%" height="20%" class="img-footer"></a>
+					<a href="https://www.youtube.com/"><img src="<?php echo $path?>public/images/icon-back-logo/logo-youtube.png" width="20%" height="20%" class="img-footer"></a>
+					<a href="https://www.youtube.com/"><img src="<?php echo $path?>public/images/icon-back-logo/logo-twitter.png" width="20%" height="20%" class="img-footer"></a>
 				</div>
 
 

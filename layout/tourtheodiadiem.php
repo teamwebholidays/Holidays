@@ -1,5 +1,9 @@
 <?php
 	$DiemDen = $_GET['diemden'];
+	//$arrchuoi = explode('.',$id);
+
+	//$DiemDen = $arrchuoi[0];
+
 	$sql = "SELECT thongtintour.MaTour,TenTour,Gia, TenDongTour, ThoiGianTour, NgayKhoiHanh, URLHinh 
 			FROM thongtintour, dongtour,hinhanhtour
 			WHERE thongtintour.DongTour = dongtour.MaDongTour and thongtintour.MaTour = hinhanhtour.MaTour

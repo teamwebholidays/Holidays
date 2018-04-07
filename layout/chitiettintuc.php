@@ -10,7 +10,7 @@
 
 	<div class="row">
 		<div class="col-md-12">
-			<img src="public/images/tin_tuc/hinh-hoa-nhat.jpg" title="hinh-hoa-nhat-ban" id="myImg">
+			<img src="<?php echo $path?>public/images/tin_tuc/hinh-hoa-nhat.jpg" title="hinh-hoa-nhat-ban" id="myImg">
 		</div>
 	</div>
 
