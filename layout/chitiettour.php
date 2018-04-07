@@ -19,7 +19,47 @@
 
     <div class="row">
         <!-- div slideshow -->
-        <div class="col-md-6">
+        <div class="col-md-7 slide-cttour">
+            <div id="slideshow" class="carousel slide" data-ride="carousel">
+  
+              <!-- The slideshow -->
+
+              <div class="carousel-inner">
+                 <?php 
+                    $row2 = mysqli_fetch_array($resulthinh);
+                    $hinh = $row2['URLHinh'];
+                  ?>
+                  <div class="carousel-item active" style="background-image: url(public/images/tour/<?php echo $hinh?>)"></div>
+                  
+                <?php
+                while($row2 = mysqli_fetch_array($resulthinh))
+                {
+                    $hinh = $row2['URLHinh'];
+                       
+                ?>
+                  
+                    <div class="carousel-item" style="background-image: url(public/images/tour/<?php echo $hinh?>)"></div>
+                <?php
+                    }
+                ?>
+                  
+              </div>
+
+              <!-- Left and right controls -->
+              <a class="carousel-control-prev" href="#slideshow" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#slideshow" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a>
+            </div>
+            
+            
+            
+            
+            
+            
+<!--
              <div id="slideshow">
                 <div class="slide-wrapper">
             <?php
@@ -36,10 +76,11 @@
             ?>
                 </div>
              </div>
+-->
         </div>
         <!--end div slideshow -->
 
-        <div class="col-md-6">
+        <div class="col-md-5">
             
             <div class="row"> 
                 <div class="col-md-4"><p><b>Mã tour:</b></p></div>
@@ -77,8 +118,8 @@
         </div>
     </div>
     
-<!--    PHAN CONG PHAT-->
 </div>
+<!--    PHAN CONG PHAT-->
 <div class="container noidungchitiettour">
     <div class="row">
         <div class="col-md-9">
