@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteRule ^(.*) - [E=BASE:%1]
+
+RewriteRule ^danh-sach-tour/([a-zA-Z0-9_-]+)$ tour_thuoc_dia_diem.php?diemden=$1
+

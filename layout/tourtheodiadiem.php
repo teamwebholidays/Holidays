@@ -1,15 +1,15 @@
 <?php
-	$MaTour = $_GET['matour'];
+	$DiemDen = $_GET['diemden'];
 	$sql = "SELECT thongtintour.MaTour,TenTour,Gia, TenDongTour, ThoiGianTour, NgayKhoiHanh, URLHinh 
 			FROM thongtintour, dongtour,hinhanhtour
 			WHERE thongtintour.DongTour = dongtour.MaDongTour and thongtintour.MaTour = hinhanhtour.MaTour
-			and thongtintour.MaTour = '".$MaTour."' 
+			and thongtintour.NoiDen = '".$DiemDen."' 
 			group by thongtintour.MaTour";
 			$result = DataProvider::ExcuteQuery($sql);	
 	$sql2 = "SELECT tendiadiem 
 			FROM thongtintour, diadiem 
 			WHERE thongtintour.NoiDen = diadiem.stt	 
-			and MaTour = '".$MaTour."'";
+			and NoiDen = '".$DiemDen."'";
 	$result2 = DataProvider::ExcuteQuery($sql2);	
 	$row2 = mysqli_fetch_row($result2);
 	$NoiDen = $row2[0];

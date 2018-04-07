@@ -190,6 +190,10 @@ header h4{
   color:white;
   padding-top: 20px;
 }
+.title_tinnoibat{
+  color:#fb0;
+  text-align: center;
+}
 .centered {
     color:white;
     position: absolute;
@@ -313,32 +317,27 @@ header h4{
   opacity: 0.5;
 }
 
-.text-yeu-thich{
-    position: absolute;
-    top: 70%;
-    left: 20%;
-    transform: translate(-30%, -50%);
-    color:#FD0303;
-    font-size:20px;
-    font-weight: bold;
-    background-color:rgba(1,0,0,0.6);
-}
-
-.text-yeu-thich_02{
-    position: absolute;
-    top: 90%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    color:white;
-    font-size:15px;
-    font-style: italic;
-    border-top: 1px solid white;
-    background-color:rgba(1,0,0,0.6);
-}
-
 .ndyeuthich{
   margin-bottom: 10px;
+}
 
+.thumbnail {
+    position: relative;
+
+}
+
+.caption {
+    background-color: rgba(5,0,0,0.3);
+    position: absolute;
+    top: 55%;
+    left: 0;
+    width: 100%;
+    color:#fb0;
+}
+
+.caption p{
+  color:white;
+  font-style: italic;
 }
 /*----------------------------END STYLE DIEM DEN YEU THICH------------------------------ */
 
