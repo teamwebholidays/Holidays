@@ -610,6 +610,7 @@ header h4{
   padding: 1px;
   color: white;
   font-size: 15px;
+  margin-bottom: 20px;
 }
 .boxngay span{
   font-weight: bold;
@@ -623,7 +624,6 @@ header h4{
 
 
 .btnchitiettour{
-  border-left:1px solid #D6D0D0;
   text-align: center; 
 }
 
@@ -643,6 +643,7 @@ header h4{
    width: 75px; height: 75px; 
    text-align: right;
 }
+
 .ribbon span {
    font-size: 10px;
    color: #fff; 
@@ -682,6 +683,30 @@ header h4{
 .blue span::before {border-left-color: #1e5799; border-top-color: #1e5799;}
 .blue span::after {border-right-color: #1e5799; border-top-color: #1e5799;}
 
+
+@media only screen and (max-width: 768px) {
+   .ribbon {
+        visibility: hidden;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+   .ribbon-repon {
+        visibility: hidden;
+    }
+}
+
+
+@media only screen and (min-width: 600px) {
+   .ribbon-repon {
+        visibility: show;
+    }
+}
+
+.ribbon-repon{
+  color:#fb0;
+  font-weight: bold;
+}
 /*----------------------------END STYLE TIM TOUR------------------------------ */
 
 /*---------------------------- STYLE CAM NHAN KHACH HANG------------------------------ */

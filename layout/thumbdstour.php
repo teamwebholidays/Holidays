@@ -27,7 +27,13 @@
 						<div class="col-md-4">
 							<p><i class="fa fa-clock-o"></i>&nbsp;Thời gian : <?php echo $ThoiGianTour?> Ngày</p>
 							<p><i class="fa fa-users"></i>&nbsp;28/3/2018</p>
+							<div class="ribbon-repon">		
+
+								<p><i class="fa fa-suitcase"></i>&nbsp;<?php echo $DongTour?></p>
+							</div>
 						</div>
+
+
 
 						<div class="col-md-4 btnchitiettour">
 							<h6 class="text-danger"><?php echo number_format($Gia)?> VNĐ</h6>
@@ -37,6 +43,8 @@
 							</form>
 						</div>
 					</div>
+
+					
 				</div>
 			</div>
 		</div>
