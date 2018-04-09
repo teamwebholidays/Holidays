@@ -3,7 +3,7 @@
 ?>
 <header class="container-fluid">
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <a class="navbar-brand" href="<?php echo $path?>"><h4>VINATRIP.VN</h4></a>
+      <div class="col-lg-3 col-md-5 col-8 logo-img"><a class="navbar-brand" href="<?php echo $path?>"><img src="public/images/logo-vinatrip.png" class="img-fluid"/></a></div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

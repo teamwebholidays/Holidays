@@ -1,5 +1,5 @@
 <?php
-	$sql = "SELECT thongtintour.MaTour,tendiadiem,LuotXem,URLHinh,NoiDen
+	$sql = "SELECT thongtintour.MaTour,diadiem.tendiadiem,thongtintour.LuotXem,hinhanhtour.URLHinh,thongtintour.NoiDen
 			FROM thongtintour,hinhanhtour,diadiem
 			WHERE thongtintour.MaTour = hinhanhtour.MaTour 
 				 and thongtintour.NoiDen = diadiem.stt

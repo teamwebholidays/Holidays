@@ -52,7 +52,7 @@
     			<ul>
     				<li>123 Đường Nguyễn Văn Cừ</li>
     				<li>Điện thoại: 0909 123 456</li>
-    				<li>Fax: 090313 123 13 </a></li>
+    				<li>Fax: 090313 123 13 </li>
     				<li>Email: info@abc.com</li>
     			</ul>
 

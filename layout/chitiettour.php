@@ -1,18 +1,20 @@
 <?php
-    $MaTour = $_GET['matour'];
-    $sql = "SELECT thongtintour.MaTour,TenTour,Gia, TenDongTour, ThoiGianTour, NgayKhoiHanh,tendiadiem, LuotXem 
-            FROM thongtintour,dongtour,hinhanhtour,diadiem
-            WHERE thongtintour.DongTour = dongtour.MaDongTour and thongtintour.NoiDen = diadiem.stt
-            and thongtintour.MaTour = '".$MaTour."'
-            Group by thongtintour.MaTour";
-            $result = DataProvider::ExcuteQuery($sql);  
-            $row = mysqli_fetch_row($result);
-    $sqlhinh = "select URLHinh FROM hinhanhtour where MaTour ='".$MaTour."'";
-    $resulthinh = DataProvider::ExcuteQuery($sqlhinh);
+    if(isset($_GET['matour']))
+    {
+        $MaTour = $_GET['matour'];
+        $sql = "SELECT thongtintour.MaTour,TenTour,Gia, TenDongTour, ThoiGianTour, NgayKhoiHanh,tendiadiem, LuotXem 
+                FROM thongtintour,dongtour,hinhanhtour,diadiem
+                WHERE thongtintour.DongTour = dongtour.MaDongTour and thongtintour.NoiDen = diadiem.stt
+                and thongtintour.MaTour = '".$MaTour."'
+                Group by thongtintour.MaTour";
+                $result = DataProvider::ExcuteQuery($sql);  
+                $row = mysqli_fetch_row($result);
+        $sqlhinh = "select URLHinh FROM hinhanhtour where MaTour ='".$MaTour."'";
+        $resulthinh = DataProvider::ExcuteQuery($sqlhinh);
+    }
 ?>
 
 <div class="container maincttour">
-
     <div class="row">
         <h3><?php echo $row[1]?></h3>
     </div>
@@ -23,13 +25,12 @@
             <div id="slideshow" class="carousel slide" data-ride="carousel">
   
               <!-- The slideshow -->
-
-              <div class="carousel-inner">
+                <div class="carousel-inner">
                  <?php 
                     $row2 = mysqli_fetch_array($resulthinh);
                     $hinh = $row2['URLHinh'];
                   ?>
-                  <div class="carousel-item active" style="background-image: url(<?php echo $path?>public/images/tour/<?php echo $hinh?>)"></div>
+                <div class="carousel-item active" style="background-image: url(<?php echo $path?>public/images/tour/<?php echo $hinh?>)"></div>
                   
                 <?php
                 while($row2 = mysqli_fetch_array($resulthinh))
@@ -38,53 +39,26 @@
                        
                 ?>
                   
-                    <div class="carousel-item" style="background-image: url(<?php echo $path?>public/images/tour/<?php echo $hinh?>)"></div>
+                <div class="carousel-item" style="background-image: url(<?php echo $path?>public/images/tour/<?php echo $hinh?>)"></div>
                 <?php
                     }
                 ?>
                   
-              </div>
+                </div>
 
               <!-- Left and right controls -->
-              <a class="carousel-control-prev" href="#slideshow" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-              </a>
-              <a class="carousel-control-next" href="#slideshow" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-              </a>
+                <a class="carousel-control-prev" href="#slideshow" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#slideshow" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
             </div>
-            
-            
-            
-            
-            
-            
-<!--
-             <div id="slideshow">
-                <div class="slide-wrapper">
-            <?php
-                while($row2 = mysqli_fetch_array($resulthinh))
-                {
-                    $hinh = $row2['URLHinh'];
-                       
-            ?>
-               <div class="slide">
-                    <img class="mySlides" src="public/images/tour/<?php echo $hinh?>" style="width:100%">
-                </div>
-            <?php
-                }
-            ?>
-                </div>
-             </div>
--->
-        <!--end div slideshow -->
-
-        <div class="col-md-5">
-            
+        </div>
+        <div class="col-md-5 col-12">
             <div class="row"> 
                 <div class="col-md-4"><p><b>Mã tour:</b></p></div>
                 <div class="col-md-8"><p><?php echo $row[0]?></p></div>
-               
             </div>
 
             <div class="row">
@@ -96,8 +70,8 @@
                 </div>
             </div>
 
-             <div class="row"> 
-                <div class="col-md-4"><b>Dòng Tour:</b> </p></div>
+            <div class="row"> 
+                <div class="col-md-4"><b>Dòng Tour:</b></div>
                 <div class="col-md-4"><span class="text-danger"><b><?php echo $row[3]?></b></span></div>
                 <div class="col-md-4"><p><b>Thời gian: </b><?php echo $row[4]?> ngày</p></div>
             </div>
@@ -105,7 +79,7 @@
             <div class="row"> 
                 <div class="col-md-4"><p><b>Khởi hành:</b></p></div>
                 <div class="col-md-4"><p><?php echo $row[5]?></p></div>
-                <div class="col-md-4"><i class="fa fa-eye">&nbsp;<b><?php echo $row[7]?> &nbsp;Lượt xem</b></i></div>
+                <div class="col-md-4"><i class="fa fa-eye"></i>&nbsp;<b><?php echo $row[7]?></b> Lượt xem</div>
             </div>
 
            
@@ -126,7 +100,6 @@
             </div>
         </div>
     </div>
-    
 </div>
 <!--    PHAN CONG PHAT-->
 <div class="container noidungchitiettour">
@@ -265,7 +238,7 @@
                                         <td>220.000 đ</td>
                                         <td>0 đ</td>
                                     </tr>
-                                    <tr style="color: #c50000">
+                                    <tr style="color: #fb0">
                                         <td>Phụ thu phòng đơn</td>
                                         <td>1.000.000 đ</td>
                                         <td>1.500.000 đ</td>

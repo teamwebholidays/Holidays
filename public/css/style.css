@@ -8,8 +8,6 @@ header h4{
 .nav-main ul li{
   padding: 0px 30px 0px 30px;
 }
-
-
 .nav-hover{
   position: relative;
 }
@@ -75,12 +73,13 @@ header h4{
 
 /*---------------------------- STYLE DAT TOUR------------------------------ */
 .dattour{
+/*    border: 1px solid red;*/
 	padding-top: 80px;
 	padding-bottom: 80px;
-	background-image: url('https://travel.com.vn/Images/SlideShow/sl_180307_tour-30.4-1.5_1920-570_2.jpg');
+	background-image: url(../images/dattour/bg-dattour.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	margin-top: 65px;
+	margin-top:90px;
 	background-position: center;
 }
 .dattour form{
@@ -725,5 +724,29 @@ header h4{
 @media only screen and (max-width: 767px) {
     .chitiettour-left-hotline {
         display: none;
+    }
+    .dattour {
+/*        margin-top: 65px;*/
+        padding-top: 10px;
+        padding-bottom: 5px;
+        padding-right: 20px;
+        background-image: none;
+        background-color: #006baf;
+    }
+    .dattour form{
+        background-color: transparent;
+    }
+    footer div[class="row"] > div:nth-child(1),footer div[class="row"] > div:nth-child(2){
+        display: none;
+    }
+}
+@media only screen and (max-width: 479px) {
+    .dattour {
+        margin-top: 65px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        padding-right: 20px;
+        background-image: none;
+        background-color: #006baf;
     }
 }
