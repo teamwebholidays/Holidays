@@ -720,3 +720,10 @@ header h4{
   width: 70%;
  }
 /*---------------------------- END STYLE CAM NHAN KHACH HANG------------------------------ */
+
+/*---------------------------- MOBILE ------------------------------ */
+@media only screen and (max-width: 767px) {
+    .chitiettour-left-hotline {
+        display: none;
+    }
+}

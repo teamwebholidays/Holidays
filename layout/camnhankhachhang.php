@@ -1,4 +1,4 @@
-<div class="container-fluid maincamnhan"">
+<div class="container-fluid maincamnhan">
 	<div class="row" >
 		<div class="col-md-12" align="center">
 			<h3>CẢM NHẬN KHÁCH HÀNG</h3>

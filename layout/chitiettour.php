@@ -77,7 +77,6 @@
                 </div>
              </div>
 -->
-        </div>
         <!--end div slideshow -->
 
         <div class="col-md-5">
