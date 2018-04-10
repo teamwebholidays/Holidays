@@ -1,10 +1,10 @@
 <?php
-	$DiemDen = $_GET['diemden'];
-	//$arrchuoi = explode('.',$id);
+	$id = $_GET['diemden'];
+	$arrchuoi = explode('-',$id);
 
-	//$DiemDen = $arrchuoi[0];
+	$DiemDen = $arrchuoi[count($arrchuoi) - 1];
 
-	$sql = "SELECT thongtintour.MaTour,TenTour,Gia, TenDongTour, ThoiGianTour, NgayKhoiHanh, URLHinh 
+	$sql = "SELECT thongtintour.MaTour,TenTour,Gia, TenDongTour, ThoiGianTour, NgayKhoiHanh, URLHinh,TenTourURL 
 			FROM thongtintour, dongtour,hinhanhtour
 			WHERE thongtintour.DongTour = dongtour.MaDongTour and thongtintour.MaTour = hinhanhtour.MaTour
 			and thongtintour.NoiDen = '".$DiemDen."' 
@@ -30,6 +30,7 @@
 		{
 			$MaTour = $row['MaTour'];
 			$TenTour = $row['TenTour'];
+			$TenTourURL = $row['TenTourURL'];
 			$Gia = $row['Gia'];
 			$DongTour = $row['TenDongTour'];
 			$ThoiGianTour = $row['ThoiGianTour'];

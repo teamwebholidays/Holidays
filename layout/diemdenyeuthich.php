@@ -1,5 +1,5 @@
 <?php
-	$sql = "SELECT thongtintour.MaTour,diadiem.tendiadiem,thongtintour.LuotXem,hinhanhtour.URLHinh,thongtintour.NoiDen
+	$sql = "SELECT thongtintour.MaTour,diadiem.tendiadiem,thongtintour.LuotXem,hinhanhtour.URLHinh,thongtintour.NoiDen,tendiadiemurl
 			FROM thongtintour,hinhanhtour,diadiem
 			WHERE thongtintour.MaTour = hinhanhtour.MaTour 
 				 and thongtintour.NoiDen = diadiem.stt
@@ -25,10 +25,11 @@
 			$LuotXem = $row['LuotXem'];
 			$Hinh = $row['URLHinh'];
 			$MaNoiDen = $row['NoiDen'];
+			$TenDiaDiemURL = $row['tendiadiemurl']
 	?>
 		<div class="col-md-3 ndyeuthich">
 			<div class="thumbnail text-center">
-				<a href="<?php echo $path?>danh-sach-tour/<?php echo $MaNoiDen?>.html"><img src="public/images/tour/<?php echo $Hinh?>" alt="Avatar" class="image" width="100%" height="200em"></a>
+				<a href="<?php echo $path?>danh-sach-tour/<?php echo $TenDiaDiemURL?>-<?php echo $MaNoiDen?>.html"><img src="public/images/tour/<?php echo $Hinh?>" alt="Avatar" class="image" width="100%" height="200em"></a>
 				  <div class="caption">
 				  	<h4><?php echo $NoiDen?></h4>
 				  	<p>Đã có <?php echo $LuotXem?> lượt xem<p>

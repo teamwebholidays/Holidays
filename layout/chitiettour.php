@@ -1,7 +1,11 @@
 <?php
-    if(isset($_GET['matour']))
+    if(isset($_GET['tour']))
     {
-        $MaTour = $_GET['matour'];
+        $id = $_GET['tour'];
+        $arrchuoi = explode('-',$id);
+
+        $MaTour = $arrchuoi[count($arrchuoi) - 1];
+
         $sql = "SELECT thongtintour.MaTour,TenTour,Gia, TenDongTour, ThoiGianTour, NgayKhoiHanh,tendiadiem, LuotXem 
                 FROM thongtintour,dongtour,hinhanhtour,diadiem
                 WHERE thongtintour.DongTour = dongtour.MaDongTour and thongtintour.NoiDen = diadiem.stt
@@ -430,6 +434,11 @@
             </div>
 
 <?php
+    $id = $_GET['tour'];
+    $arrchuoi = explode('-',$id);
+
+    $MaTour = $arrchuoi[count($arrchuoi) - 1];
+
     $sqltheogia = "SELECT thongtintour.MaTour,TenTour, URLHinh
                    FROM thongtintour,hinhanhtour
                    WHERE thongtintour.MaTour = hinhanhtour.MaTour
@@ -494,9 +503,16 @@
     </div>
 </div>
 <?php
+    $id = $_GET['tour'];
+    $arrchuoi = explode('-',$id);
+
+    $MaTour = $arrchuoi[count($arrchuoi) - 1];
+
     $sqlupdate = "update thongtintour set LuotXem = LuotXem + 1 
-            WHERE MaTour = '".$_GET['matour']."'";
+            WHERE MaTour = '".$MaTour."'";
             DataProvider::ExcuteQuery($sqlupdate);  
+
+    echo $sqlupdate;
 ?>
 
 
