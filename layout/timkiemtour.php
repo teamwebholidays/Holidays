@@ -45,7 +45,7 @@
 			$sqlgia = 'Gia > 10000';
 		}
 
-		$sql = "SELECT thongtintour.`MaTour`,`TenTour`, Gia, TenDongTour, ThoiGianTour, NgayKhoiHanh, URLHinh
+		$sql = "SELECT thongtintour.`MaTour`,`TenTour`, Gia, TenDongTour, ThoiGianTour, NgayKhoiHanh, URLHinh,diadiem.tendiadiem
 				FROM `thongtintour`, hinhanhtour, dongtour,diadiem
 				WHERE hinhanhtour.MaTour = thongtintour.MaTour 
 					and thongtintour.DongTour = dongtour.MaDongTour
@@ -57,13 +57,19 @@
 					and TinhTrang = ".$tinhtrang."
 					and ".$sqlgia."
 					limit 0,2";
-        $result = DataProvider::ExcuteQuery($sql);	
+        $sqlNoiKhoiHanh ="SELECT diadiem.tendiadiem FROM diadiem WHERE diadiem.stt ={$noikhoihanh}";
+        $result = DataProvider::ExcuteQuery($sql);
+        $resultNKH = DataProvider::ExcuteQuery($sqlNoiKhoiHanh);
 	}
 ?>
 
 <div class="container maintimtour">
 	<div class="row">
-			<h6 class="text-danger">DANH SÁCH TOUR KHỞI HÀNH TỪ HỒ CHÍ MINH</h6>
+            <?php
+                $rowNKH = mysqli_fetch_array($resultNKH);
+                $TenNoiKhoiHanh = $rowNKH['tendiadiem'];
+            ?>
+        <h6 class="text-danger">DANH SÁCH TOUR KHỞI HÀNH TỪ <span style="text-transform: uppercase"><?php echo $TenNoiKhoiHanh?></span></h6>
 	</div>
 
 <?php
@@ -78,6 +84,8 @@
 			$ThoiGianTour = $row['ThoiGianTour'];
 			$NgayKhoiHanh = $row['NgayKhoiHanh'];
 			$Hinh = $row['URLHinh'];
+
+
 
 			$time=strtotime($NgayKhoiHanh);
 			$month=date("m",$time);
