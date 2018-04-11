@@ -1,22 +1,25 @@
 <?php
-	$DiemDen = $_GET['diemden'];
-	//$arrchuoi = explode('.',$id);
+    if(isset($_GET['diemden']))
+    {
+        $id = $_GET['diemden']; 
+        $arrchuoi = explode('-',$id);
 
-	//$DiemDen = $arrchuoi[0];
+        $DiemDen = $arrchuoi[count($arrchuoi) - 1];
 
-	$sql = "SELECT thongtintour.MaTour,TenTour,Gia, TenDongTour, ThoiGianTour, NgayKhoiHanh, URLHinh 
-			FROM thongtintour, dongtour,hinhanhtour
-			WHERE thongtintour.DongTour = dongtour.MaDongTour and thongtintour.MaTour = hinhanhtour.MaTour
-			and thongtintour.NoiDen = '".$DiemDen."' 
-			group by thongtintour.MaTour";
-			$result = DataProvider::ExcuteQuery($sql);	
-	$sql2 = "SELECT tendiadiem 
-			FROM thongtintour, diadiem 
-			WHERE thongtintour.NoiDen = diadiem.stt	 
-			and NoiDen = '".$DiemDen."'";
-	$result2 = DataProvider::ExcuteQuery($sql2);	
-	$row2 = mysqli_fetch_row($result2);
-	$NoiDen = $row2[0];
+        $sql = "SELECT thongtintour.MaTour,TenTour,Gia, TenDongTour, ThoiGianTour, NgayKhoiHanh, URLHinh,TenTourURL 
+                FROM thongtintour, dongtour,hinhanhtour
+                WHERE thongtintour.DongTour = dongtour.MaDongTour and thongtintour.MaTour = hinhanhtour.MaTour
+                and thongtintour.NoiDen = '".$DiemDen."' 
+                group by thongtintour.MaTour";
+                $result = DataProvider::ExcuteQuery($sql);	
+        $sql2 = "SELECT tendiadiem 
+                FROM thongtintour, diadiem 
+                WHERE thongtintour.NoiDen = diadiem.stt	 
+                and NoiDen = '".$DiemDen."'";
+        $result2 = DataProvider::ExcuteQuery($sql2);	
+        $row2 = mysqli_fetch_row($result2);
+        $NoiDen = $row2[0];
+    }
 ?>
 
 <div class="container" style="margin-top: 20px;">
@@ -30,6 +33,7 @@
 		{
 			$MaTour = $row['MaTour'];
 			$TenTour = $row['TenTour'];
+			$TenTourURL = $row['TenTourURL'];
 			$Gia = $row['Gia'];
 			$DongTour = $row['TenDongTour'];
 			$ThoiGianTour = $row['ThoiGianTour'];

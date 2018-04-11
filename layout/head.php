@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Holiday</title>
+    <title>VINATRIP</title>
 
     <!-- Bootstrap core CSS -->
     <link href="<?php echo $path?>public/Bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">

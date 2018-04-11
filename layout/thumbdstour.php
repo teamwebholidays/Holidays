@@ -39,7 +39,7 @@
 							<h6 class="text-danger"><?php echo number_format($Gia)?> VNĐ</h6>
 							<form>
 								<button type="submit" name="chitiet" class="btn btn-danger">
-									<a href="<?php echo $path?>chi_tiet_tour.php?matour=<?php echo $MaTour ?>">CHI TIẾT</a></button>
+									<a href="<?php echo $path?>chi-tiet-tour/<?php echo $TenTourURL?>-<?php echo $MaTour ?>.html">CHI TIẾT</a></button>
 							</form>
 						</div>
 					</div>

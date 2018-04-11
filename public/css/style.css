@@ -1,6 +1,7 @@
 body{
     background-color: #fff;
 }
+thongtin-tourmoinhat
 /*-------------------------STYLE HEADER--------------------------------*/
 header h4{
 	color: #fb0;
@@ -544,7 +545,7 @@ header h4{
     text-decoration: none;
 }
 .tourlienquan-content p{
-    width: 255px;
+    width: auto;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -748,5 +749,8 @@ header h4{
         padding-right: 20px;
         background-image: none;
         background-color: #006baf;
+    }
+    .slide-cttour{
+        display: none;
     }
 }

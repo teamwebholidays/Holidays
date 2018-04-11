@@ -1,7 +1,11 @@
 <?php
-    if(isset($_GET['matour']))
+    if(isset($_GET['tour']))
     {
-        $MaTour = $_GET['matour'];
+        $id = $_GET['tour'];
+        $arrchuoi = explode('-',$id);
+
+        $MaTour = $arrchuoi[count($arrchuoi) - 1];
+
         $sql = "SELECT thongtintour.MaTour,TenTour,Gia, TenDongTour, ThoiGianTour, NgayKhoiHanh,tendiadiem, LuotXem 
                 FROM thongtintour,dongtour,hinhanhtour,diadiem
                 WHERE thongtintour.DongTour = dongtour.MaDongTour and thongtintour.NoiDen = diadiem.stt
@@ -430,7 +434,12 @@
             </div>
 
 <?php
-    $sqltheogia = "SELECT thongtintour.MaTour,TenTour, URLHinh
+    $id = $_GET['tour'];
+    $arrchuoi = explode('-',$id);
+
+    $MaTour = $arrchuoi[count($arrchuoi) - 1];
+
+    $sqltheogia = "SELECT thongtintour.MaTour,TenTour,TenTourURL, URLHinh
                    FROM thongtintour,hinhanhtour
                    WHERE thongtintour.MaTour = hinhanhtour.MaTour
                    and Gia = ".$row[2]."
@@ -438,7 +447,7 @@
                    GROUP BY thongtintour.MaTour
                    limit 0,3";
     $resulttheogia = DataProvider::ExcuteQuery($sqltheogia);
-    $sqltheongay = "SELECT thongtintour.MaTour,TenTour, URLHinh
+    $sqltheongay = "SELECT thongtintour.MaTour,TenTour,TenTourURL, URLHinh
                    FROM thongtintour,hinhanhtour
                    WHERE thongtintour.MaTour = hinhanhtour.MaTour
                    and NgayKhoiHanh = '".$row[5]."'
@@ -457,12 +466,15 @@
                     {
                         $MaTour = $row['MaTour'];
                         $TenTour = $row['TenTour'];
+                        $TenTourURL = $row['TenTourURL'];
                         $URLHinh = $row['URLHinh'];
+                        
                 ?>
                     <div class="row">
                         <div class="tourlienquan-content col-md-12">
-                            <a href="chi_tiet_tour.php?matour=<?php echo $MaTour ?>"><img src="<?php echo $path?>public/images/tour/<?php echo $URLHinh?>" class="img-fluid" alt="<?php echo $TenTour?>"/></a>
-                            <a href="chi_tiet_tour.php?matour=<?php echo $MaTour ?>"><p><?php echo $TenTour?></p></a>
+                            <a href="<?php echo $path?>chi-tiet-tour/<?php echo $TenTourURL?>-<?php echo $MaTour ?>.html"><img src="<?php echo $path?>public/images/tour/<?php echo $URLHinh?>" class="img-fluid" alt="<?php echo $TenTour?>"/></a>
+                            <a href="<?php echo $path?>chi-tiet-tour/<?php echo $TenTourURL?>-<?php echo $MaTour ?>.html"><p><?php echo $TenTour?></p></a>
+                            
                         </div>
                     </div>
                 <?php
@@ -477,12 +489,13 @@
                     {
                         $MaTour = $row['MaTour'];
                         $TenTour = $row['TenTour'];
+                        $TenTourURL = $row['TenTourURL'];
                         $URLHinh = $row['URLHinh'];
                 ?>
                     <div class="row">
                         <div class="tourlienquan-content col-md-12">
-                            <a href="https://youtube.com"><img src="<?php echo $path?>public/images/tour/<?php echo $URLHinh?>" class="img-fluid" alt="<?php echo $TenTour?>"/></a>
-                            <a href="https://fb.com"><p><?php echo $TenTour?></p></a>
+                            <a href="<?php echo $path?>chi-tiet-tour/<?php echo $TenTourURL?>-<?php echo $MaTour ?>.html"><img src="<?php echo $path?>public/images/tour/<?php echo $URLHinh?>" class="img-fluid" alt="<?php echo $TenTour?>"/></a>
+                            <a href="<?php echo $path?>chi-tiet-tour/<?php echo $TenTourURL?>-<?php echo $MaTour ?>.html"><p><?php echo $TenTour?></p></a>
                         </div>
                     </div>
                  <?php
@@ -494,26 +507,12 @@
     </div>
 </div>
 <?php
+    $id = $_GET['tour'];
+    $arrchuoi = explode('-',$id);
+
+    $MaTour = $arrchuoi[count($arrchuoi) - 1];
+
     $sqlupdate = "update thongtintour set LuotXem = LuotXem + 1 
-            WHERE MaTour = '".$_GET['matour']."'";
+            WHERE MaTour = '".$MaTour."'";
             DataProvider::ExcuteQuery($sqlupdate);  
 ?>
-
-
-<!-- script slide show-->
-<script>
-    var myIndex = 0;
-    carousel();
-    function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";  
-        }
-        myIndex++;
-        if (myIndex > x.length) {myIndex = 1}    
-        x[myIndex-1].style.display = "block";  
-        setTimeout(carousel, 3500);    
-    }
-</script>
-<!--end script slide show-->
