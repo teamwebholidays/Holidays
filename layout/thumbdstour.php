@@ -21,12 +21,12 @@
 					 <div class="row">
 						<div class="col-md-4">
 							<p><i class="fa fa-barcode"></i>&nbsp;<?php echo $MaTour?></p>
-							<p><i class="fa fa-calendar"></i>&nbsp;<?php echo $NgayKhoiHanh?></p>
+							<p><i class="fa fa-calendar"></i>&nbsp;<?php echo date("d/m/Y",strtotime($NgayKhoiHanh))?></p>
 						</div>
 
 						<div class="col-md-4">
 							<p><i class="fa fa-clock-o"></i>&nbsp;Thời gian : <?php echo $ThoiGianTour?> Ngày</p>
-							<p><i class="fa fa-users"></i>&nbsp;28/3/2018</p>
+							<p><i class="fa fa-users"></i>&nbsp;Số chỗ còn nhận <?php echo $SoCho?></p>
 							<div class="ribbon-repon">		
 
 								<p><i class="fa fa-suitcase"></i>&nbsp;<?php echo $DongTour?></p>

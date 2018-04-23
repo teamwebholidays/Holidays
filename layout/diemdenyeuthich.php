@@ -41,4 +41,9 @@
 		}
 	?>
 	</div>
+    <div class="row xtc-button justify-content-center">
+        <div class="col-4 col-sm-2 text-center">
+            <a href="#">Xem Tất Cả</a>
+        </div>
+    </div>
 </div>

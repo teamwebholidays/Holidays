@@ -6,7 +6,7 @@
 
         $DiemDen = $arrchuoi[count($arrchuoi) - 1];
 
-        $sql = "SELECT thongtintour.MaTour,TenTour,Gia, TenDongTour, ThoiGianTour, NgayKhoiHanh, URLHinh,TenTourURL 
+        $sql = "SELECT thongtintour.MaTour,TenTour,Gia, TenDongTour, ThoiGianTour, NgayKhoiHanh, URLHinh,TenTourURL,SoCho 
                 FROM thongtintour, dongtour,hinhanhtour
                 WHERE thongtintour.DongTour = dongtour.MaDongTour and thongtintour.MaTour = hinhanhtour.MaTour
                 and thongtintour.NoiDen = '".$DiemDen."' 
@@ -40,6 +40,7 @@
 			$NgayKhoiHanh = $row['NgayKhoiHanh'];
 			$Hinh = $row['URLHinh'];
 			$time=strtotime($NgayKhoiHanh);
+            $SoCho = $row['SoCho'];
 			$month=date("m",$time);
 			$year=date("Y",$time);
 			$day=date("d", $time);

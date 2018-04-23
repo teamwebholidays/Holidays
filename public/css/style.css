@@ -154,6 +154,13 @@ header h4{
     display: inline-block;
     padding: 5px 0;
     color: #fb0;
+    width: 100%;
+}
+.news .title a > p{
+    width: auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .news .title p{
 /*    border: 1px solid red;*/
@@ -181,6 +188,40 @@ header h4{
     text-align: right;
 }
 */
+.xtc-button{
+    margin-top: 25px;
+}
+.xtc-button > div{
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #fb0;
+    border-radius: 5px;
+    transition: all 0.3s ease-in;
+/*
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: 3;
+*/
+}
+.xtc-button > div:hover{
+    transform: rotate(3deg) scale(1.1);
+    background-color: #fff;
+    border: 1px solid #fb0;
+}
+.xtc-button > div > a{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: block;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.xtc-button > div > a:hover{
+    color: #fb0;
+}
 /*---------------------------- END TOUR MOI NHAT------------------------------ */
 
 
