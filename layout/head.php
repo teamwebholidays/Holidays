@@ -1,5 +1,5 @@
 <?php
-    $path = "http://localhost:8888/Holidays_Web/";
+    $path = "http://localhost:81/Holidays_Web/";
 ?>
 <head>
     <meta charset="utf-8">

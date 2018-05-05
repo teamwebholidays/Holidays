@@ -315,6 +315,50 @@ header h4{
 .button-book:hover{
   color:rgb(172,214,60);
 }
+
+
+.thumb-tinnoibat{
+  width: 100%;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+
+}
+
+.thumb-tinnoibat .top-left{
+    position: absolute;
+    top: 25px;
+    left: 16px;
+    animation-name: top-left;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    font-size: 20px;
+}
+.thumb-tinnoibat .top-left_1{
+    position: absolute;
+    top: 55px;
+    left: 16px;
+    animation-name: top-left;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    font-size: 20px;
+}
+
+.thumb-tinnoibat .top-left_2{
+    position: absolute;
+    top: 100px;
+    left: 16px;
+    padding: 2px;
+}
+.thumb-tinnoibat .top-left_2 button{
+  font-size: 12px;
+}
+
+@keyframes top-left {
+    to {color: white;}
+    from {color: red;}
+}
 /*----------------------------END STYLE TIN NOI BAT------------------------------ */
 
 /*----------------------------STYLE TIN NOI TUC DU LICH------------------------------ */
