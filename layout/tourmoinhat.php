@@ -7,12 +7,11 @@
     $result = DataProvider::ExcuteQuery($sql);
 ?>
 <div class="tourmoinhat">
-    <div class="container">
-        
-        
+    <div class="container">      
         <div class="row titleddyeuthich">
-		<div class="col-md-12" align="center">
-			<h2>TOUR MỚI NHẤT</h2>
+		<div class="col-md-12">
+			<h2><i class="fa fa-globe"></i>&nbsp;TOUR MỚI NHẤT</h2>
+            <hr/>
 		</div>
         </div>
         

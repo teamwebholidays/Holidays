@@ -11,8 +11,9 @@
 
 <div class="container">
 	<div class="row titleddyeuthich">
-		<div class="col-md-12" align="center">
-			<h2>ĐIỂM ĐẾN YÊU THÍCH</h2>
+		<div class="col-md-12">
+			<h2><i class="fa fa-globe"></i>&nbsp;ĐIỂM ĐẾN YÊU THÍCH</h2>
+			<hr/>
 		</div>
 	</div>
 

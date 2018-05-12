@@ -7,6 +7,7 @@
     <!-- end head -->
 
     <body>
+  
         <!-- header -->
           <?php
             include('layout/header.php');

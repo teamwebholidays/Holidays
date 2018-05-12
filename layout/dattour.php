@@ -18,7 +18,6 @@
     $resultDT = DataProvider::ExcuteQuery($sqlDT);
 ?>
 
-
 <div class="dattour">
 <div class="container">
         <form name="frmDatTour" action="tim_kiem_tour.php" method="POST">
@@ -27,10 +26,7 @@
                 <div class="col-md-6 col-sm-4 col-6">
                     <label>Nơi khởi hành</label>
                     <select class="form-control input-md" id="slNoiKhoiHanh" name="slNoiKhoiHanh">
-                        <option value="0">Nơi Khởi Hành</option>
-                        
-                        
-                        
+                        <option value="0">Nơi Khởi Hành</option>                      
                         <?php
                             $row = mysqli_fetch_array($resultNKH);
                             $STT = $row['stt'];
